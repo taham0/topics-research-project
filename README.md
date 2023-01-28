@@ -1,2 +1,5 @@
-# topics-research-project
-Research project for the course CS-678: Topics in Internet Research.
+# [Research Project] CS-678: Topics in Internet Research
+
+1. Project Proposal
+2. Mid-term Report
+3. Final Paper
