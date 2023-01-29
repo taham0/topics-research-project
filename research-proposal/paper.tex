@@ -1,0 +1,37 @@
+\documentclass[pageno]{jpaper}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+% Ensure letter paper
+\pdfpagewidth=8.5in
+\pdfpageheight=11in
+
+\input{macros}
+
+\begin{document}
+
+\date{}
+
+% make title bold and 14 pt font (Latex default is non-bold, 16 pt)
+\title{Research Proposal}
+\author{Muhammad Taha}
+
+\maketitle
+
+\input{intro}
+\input{related_work}
+\input{approach}
+\input{work_division}
+
+% \newpage
+% \input{technique}
+% \input{bug_category}
+% \input{bug_analysis}
+
+\bibliographystyle{acm}
+% \bibliography{ref,sieve_ref}
+
+% ref.bib is a copy of ref_hotos.bib with more references
+% \bibliography{ref_hotos,ref,sieve_ref}
+\end{document}

@@ -1,0 +1,303 @@
+\newcommand{\todo}[1]{{{\color{red} [TODO: #1]}}}
+\newcommand{\TODO}[1]{{{\color{red} [TODO: #1]}}}
+\newcommand{\tianyin}[1]{{{\color{red} [ty: #1]}}}
+\newcommand{\tyler}[1]{{{\color{red} [tyler: #1]}}}
+\newcommand{\edit}[1]{{{\color{blue} [#1]}}}
+\newcommand{\tofill}[1]{{{\color{red} #1}}}
+\newcommand{\checked}[1]{{{#1}}}
+\newcommand{\xudong}[1]{{\color{red} [xd: #1]}}
+\newcommand{\Space}[1]{}
+\newcommand{\Fix}[1]{{\color{red}#1}}
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{inconsolata}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{xspace}
+% \usepackage[inline]{enumitem}
+
+%\newcommand{\comment}[1]{{}}
+
+\usepackage{tikz}
+\newcommand*\BC[1]{%
+	\begin{tikzpicture}[baseline=(C.base)]
+		\node[draw,circle,fill=black,inner sep=0.1pt](C) {\textcolor{white}{#1}};
+	\end{tikzpicture}}
+	%\end{tikzpicture}\hspace{2px}}
+
+\definecolor{gray}{gray}{0.5}
+\definecolor{LightGray}{gray}{0.85}
+\definecolor{VeryLightGray}{gray}{0.90}
+\definecolor{ForestGreen}{rgb}{0.13, 0.55, 0.13}
+\definecolor{Maroon}{rgb}{0.5, 0.0, 0.0}
+\definecolor{darkpastelred}{rgb}{0.76, 0.23, 0.13}
+
+\newcommand{\acto}{Acto\xspace}
+\newcommand{\actoblack}{Acto-$\blacksquare$\xspace}
+\newcommand{\actowhite}{Acto-$\square$\xspace}
+\newcommand{\spec}{test plan}
+
+\newcommand{\dirtystate}{dirty-state}
+\newcommand{\stalestate}{stale-state}
+\newcommand{\volatilestate}{volatile-state}
+\newcommand{\dirtystatecap}{Dirty-state}
+\newcommand{\stalestatecap}{Stale-state}
+\newcommand{\volatilestatecap}{Volatile-state}
+
+\newcommand{\operator}{operator\xspace}
+\newcommand{\operatorcap}{Operator\xspace}
+\newcommand{\operators}{operators\xspace}
+\newcommand{\operatorscap}{Operators\xspace}
+\newcommand{\canonicalizes}{normalizes\xspace}
+\newcommand{\canonicalization}{normalization\xspace}
+
+\newcommand{\opcap}{Controller}
+\newcommand{\opscap}{Controllers}
+\newcommand{\op}{controller}
+\newcommand{\ops}{controllers}
+
+\newcommand{\para}[1]{\smallskip\noindent {\bf #1} }
+\newcommand{\tworow}[1]{\multirow{2}{*}{#1}}
+
+\newcommand{\caop}{Cass-op\xspace}
+\newcommand{\crdbop}{Cockroach-op\xspace}
+\newcommand{\knop}{KnativeOp\xspace}
+\newcommand{\mgopone}{Mongodb-op-2\xspace}
+\newcommand{\mgoptwo}{MongodbOp\xspace}
+\newcommand{\xtop}{Xtradb-op\xspace}
+\newcommand{\rbop}{RabbitmqOp\xspace}
+\newcommand{\rdopone}{spothome/Redis-op\xspace}
+\newcommand{\rdoptwo}{OKT/Redis-op\xspace}
+\newcommand{\tiop}{Tidb-op\xspace}
+\newcommand{\zkop}{ZookeeperOp\xspace}
+
+\newcommand{\object}{state object}
+\newcommand{\objectcap}{State object}
+\newcommand{\objects}{state objects}
+\newcommand{\objectscap}{State objects}
+
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+    \node[shape=circle,draw,inner sep=0.5pt] (char) {#1};}}
+
+\newcommand*\circledblack[1]{\tikz[baseline=(char.base)]{
+            \node[fill=black,shape=circle,draw,inner sep=0.5pt] (char) {\color{white}#1};}}
+
+\newenvironment{packed_itemize}{
+\begin{list}{\labelitemi}{\leftmargin=1.0em}
+ \setlength{\itemsep}{2.5pt}
+ \setlength{\parskip}{0pt}
+ \setlength{\parsep}{0pt}
+ \setlength{\headsep}{0pt}
+ \setlength{\topskip}{0pt}
+ \setlength{\topmargin}{0pt}
+ \setlength{\topsep}{0pt}
+ \setlength{\partopsep}{0pt}
+}{\end{list}}
+
+\newenvironment{packed_enumerate}{
+\vspace{-1.8ex}
+\begin{enumerate}[label=(\arabic*),leftmargin=1.7em]
+ \setlength{\itemsep}{1.5pt}
+ \setlength{\parskip}{0pt}
+ \setlength{\parsep}{0pt}
+ \setlength{\headsep}{0pt}
+ \setlength{\topskip}{0pt}
+ \setlength{\topmargin}{0pt}
+ \setlength{\topsep}{0pt}
+ \setlength{\partopsep}{0pt}
+}{\end{enumerate}
+\vspace{-1.8ex}
+}
+
+% \lstset{language=Go,
+%   basicstyle=\ttfamily\scriptsize,
+%   keywordstyle=\color{blue}\ttfamily,
+%   stringstyle=\color{red}\ttfamily,
+%   commentstyle=\color{green}\ttfamily
+% }
+
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+
+\lstdefinelanguage{json}{
+    basicstyle=\footnotesize\ttfamily,
+    numbers=left,
+    numberstyle=\footnotesize,
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frame=lines,
+    backgroundcolor=\color{background},
+    literate=
+     *{0}{{{\color{numb}0}}}{1}
+      {1}{{{\color{numb}1}}}{1}
+      {2}{{{\color{numb}2}}}{1}
+      {3}{{{\color{numb}3}}}{1}
+      {4}{{{\color{numb}4}}}{1}
+      {5}{{{\color{numb}5}}}{1}
+      {6}{{{\color{numb}6}}}{1}
+      {7}{{{\color{numb}7}}}{1}
+      {8}{{{\color{numb}8}}}{1}
+      {9}{{{\color{numb}9}}}{1}
+      {:}{{{\color{punct}{:}}}}{1}
+      {,}{{{\color{punct}{,}}}}{1}
+      {\{}{{{\color{delim}{\{}}}}{1}
+      {\}}{{{\color{delim}{\}}}}}{1}
+      {[}{{{\color{delim}{[}}}}{1}
+      {]}{{{\color{delim}{]}}}}{1},
+}
+
+\lstdefinelanguage{godep}{
+  % Keywords as defined in the language grammar
+  morekeywords=[1]{%
+    cr,Spec,Backup,Enabled,Sharding},
+  % Built-in functions
+  keywordstyle=[4]\color{blue},
+  morekeywords=[2]{%
+    append,cap,close,complex,copy,delete,imag,%
+    len,make,new,panic,print,println,real,recover},
+  % Pre-declared types
+  morekeywords=[3]{%
+    bool,byte,complex64,complex128,error,float32,float64,%
+    int,int8,int16,int32,int64,rune,string,%
+    uint,uint8,uint16,uint32,uint64,uintptr},
+  % Constants and zero value
+  morekeywords=[4]{return},
+  % Strings : "foo", 'bar', `baz`
+  morestring=[b]{'},
+  morestring=[b]{`},
+  % Comments : /* comment */ and // comment
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  % Options
+  sensitive=true,
+  tabsize=2,
+  numbers=none,
+  frame=no,
+  basicstyle=\scriptsize\ttfamily,
+%  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\color{darkpastelred}\ttfamily\bfseries,
+  commentstyle=\color{ForestGreen},
+%  numbers=left,
+%  numbersep=5pt,
+  showstringspaces=false,
+  stringstyle=\color{blue},
+}
+
+\lstdefinelanguage{myGo}{
+  % Keywords as defined in the language grammar
+  morekeywords=[1]{%
+    break,default,func,interface,select,case,defer,go,map,%
+    struct,chan,else,goto,package,switch,const,fallthrough,%
+    if,range,type, continue,for,import,return,var},
+  % Built-in functions
+  morekeywords=[2]{%
+    append,cap,close,complex,copy,delete,imag,%
+    len,make,new,panic,print,println,real,recover},
+  % Pre-declared types
+  morekeywords=[3]{%
+    bool,byte,complex64,complex128,error,float32,float64,%
+    int,int8,int16,int32,int64,rune,string,%
+    uint,uint8,uint16,uint32,uint64,uintptr},
+  % Constants and zero value
+  morekeywords=[4]{true,false,iota,nil},
+  % Strings : "foo", 'bar', `baz`
+  morestring=[b]{"},
+  morestring=[b]{'},
+  morestring=[b]{`},
+  % Comments : /* comment */ and // comment
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  % Options
+  sensitive=true,
+  tabsize=2,
+  numbers=none,
+  frame=no,
+  basicstyle=\scriptsize\ttfamily,
+%  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\color{darkpastelred}\ttfamily\bfseries,
+  commentstyle=\color{ForestGreen},
+%  numbers=left,
+%  numbersep=5pt,
+  showstringspaces=false,
+  stringstyle=\color{blue},
+}
+
+% \lstset{ % add your own preferences
+%     frame=single,
+%     basicstyle=\footnotesize,
+%     keywordstyle=\color{red},
+%     numbers=left,
+%     numbersep=5pt,
+%     showstringspaces=false,
+%     stringstyle=\color{blue},
+%     tabsize=2,
+%     language=myGo % this is it !
+% }
+
+% \newcommand\YAMLcolonstyle{\color{red}\mdseries}
+% \newcommand\YAMLkeystyle{\color{black}\bfseries}
+% \newcommand\YAMLvaluestyle{\color{blue}\mdseries}
+
+\definecolor{cornellred}{rgb}{0.7, 0.11, 0.11}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+\definecolor{battleshipgrey}{rgb}{0.52, 0.52, 0.51}
+\newcommand\YAMLcolonstyle{\color{black}}
+\newcommand\YAMLkeystyle{\color{cornellred}}
+\newcommand\YAMLvaluestyle{\color{blue}}
+\lstdefinelanguage{myyaml}
+{
+  keywords={true,false,null,y,n},
+  keywordstyle=\color{darkgray}\bfseries,
+  basicstyle=\YAMLkeystyle\footnotesize\ttfamily,   % assuming a key comes first
+  sensitive=false,
+  comment=[l]{\#},
+  morecomment=[s]{/*}{*/},
+  % basicstyle=\footnotesize\ttfamily,
+  commentstyle=\color{battleshipgrey}\ttfamily,
+  stringstyle=\YAMLvaluestyle\ttfamily,
+  moredelim=[l][\color{orange}]{\&},
+  moredelim=[l][\color{magenta}]{*},
+  moredelim=**[il][\YAMLcolonstyle{:}\YAMLvaluestyle]{:},   % switch to value style at :
+  morestring=[b]',
+  morestring=[b]",
+  literate =    {>}{{\textcolor{red}\textgreater}}1
+                {|}{{\textcolor{red}\textbar}}1
+                {\ -\ }{{\mdseries\ -\ }}3,
+}
+
+
+\definecolor{ballblue}{rgb}{0.13, 0.67, 0.8}
+\definecolor{bondiblue}{rgb}{0.0, 0.58, 0.71}
+\definecolor{cobalt}{rgb}{0.0, 0.28, 0.67}
+\definecolor{copper}{rgb}{0.72, 0.45, 0.2}
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.55}
+
+% Comments
+\newcommand\lalith[1]{{\color{purple}{Lalith:#1}}}
+
+\newcommand{\dummy}{DUMMY}
+\definecolor{light-gray}{gray}{0.95}
+\newcommand{\code}[1]{\texttt{#1}}
+
+\newcommand{\newbugs}{59 }
+\newcommand{\confirmedbugs}{47 }
+\newcommand{\fixedbugs}{31 }
+\newcommand{\fprate}{12.77\% }
+
+\lstset{
+  basicstyle=\tiny,
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+  numbers=left,
+}
