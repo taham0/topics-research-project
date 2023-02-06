@@ -2,4 +2,4 @@
 
 1. Project Proposal
 2. Mid-term Report
-3. Final Paper
+3. Final Report
