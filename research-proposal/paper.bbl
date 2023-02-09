@@ -1,3 +1,14 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{DBLP:journals/corr/abs-1812-01097}
+{\sc Caldas, S., Wu, P., Li, T., Kone{\v{c}}n{\'y}, J., McMahan, H.~B., Smith,
+  V., and Talwalkar, A.}
+\newblock {LEAF:} {A} benchmark for federated settings.
+\newblock {\em CoRR abs/1812.01097\/} (2018).
+
+\bibitem{DBLP:journals/corr/McMahanMRA16}
+{\sc McMahan, H.~B., Moore, E., Ramage, D., and y~Arcas, B.~A.}
+\newblock Federated learning of deep networks using model averaging.
+\newblock {\em CoRR abs/1602.05629\/} (2016).
 
 \end{thebibliography}

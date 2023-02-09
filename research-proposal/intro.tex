@@ -3,11 +3,11 @@
     \newline
     \newline
     Federated Learning involves training a shared global model using local data and compute on various user devices.
-    Several approaches have been proposed to implement this paradigm starting with Federated Averaging (1).
+    Several approaches have been proposed to implement this paradigm starting with Federated Averaging~\cite{DBLP:journals/corr/McMahanMRA16}.
     However, not many of these approaches consider low-end devices that are unable to perform training. 
     This has implications for fairness due to introduction of systematic bias, in addition to degradation in model accuracy.
     Recent works such as FedProx (2) and Hassas (3) have attempted to include slow devices by incorporating partial work and serving a subset model according to device characteristics, respectively. 
-    These approaches have been evaluated on large-scale simulations using LEAF Benchmark (4) and a small-scale testbed of mobile devices in case of Hassas.
+    These approaches have been evaluated on large-scale simulations using LEAF Benchmark~\cite{DBLP:journals/corr/abs-1812-01097} and a small-scale testbed of mobile devices in case of Hassas.
     To the best of our knowledge, none of these works have been evaluated on mid-scale federated learning systems using actual mobile devices with a sufficiently large number of clients.
     \newline
     \newline

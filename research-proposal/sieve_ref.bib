@@ -1,0 +1,1518 @@
+@article{Burns:2016,
+   author = {Brendan Burns and Brian Grant and David Oppenheimer and Eric Brewer and John Wilkes},
+   title = "{Borg, Omega, and Kubernetes}",
+   journal = "Communications of the ACM",
+   volume = 59,
+   number = 5,
+   month = MAY,
+   year = 2016,
+   pages={50--57},
+}
+
+@INPROCEEDINGS{Ratis:21,
+    author = {Pavlos Ratis},
+    title = "{Lessons Learned using the Operator Pattern to build a Kubernetes Platform}",
+    booktitle = {USENIX SREcon},
+    month = OCT,
+    year = 2021,
+}
+
+@misc{operator_white_paper,
+  title = "{CNCF Operator White Paper - Final Version}",
+  howpublished = {\url{https://github.com/cncf/tag-app-delivery/blob/main/operator-wg/whitepaper/Operator-WhitePaper_v1-0.md}},
+}
+
+@article{Hellerstein:2020,
+  author = {Joseph M. Hellerstein and Peter Alvaro},
+  title = "{Keeping CALM: When Distributed Consistency is Easy}",
+  year = {2020},
+  volume = {63},
+  number = {9},
+  journal = {Communications of the ACM},
+  month = SEP,
+  pages = {72–81},
+}
+
+@article{Herlihy:1990,
+  author = {Herlihy, Maurice P. and Wing, Jeannette M.},
+  title = "{Linearizability: A Correctness Condition for Concurrent Objects}",
+  year = {1990},
+  volume = {12},
+  number = {3},
+  journal = {ACM Transactions on Programming Languages and Systems},
+  month = jul,
+  pages = {463–492},
+}
+
+@misc{Brooker:2020,
+  title = "{The Fundamental Mechanism of Scaling}",
+  author = {Marc Brooker},
+  howpublished = {\url{http://brooker.co.za/blog/2021/01/22/cloud-scale.html}},
+  year = 2020,
+}
+
+@INPROCEEDINGS{tang:15,
+    author = {Chunqiang Tang and Thawan Kooburat and Pradeep Venkatachalam and Akshay Chander and Zhe Wen and Aravind Narayanan and Patrick Dowell and Robert Karl},
+    title = "{Holistic Configuration Management at Facebook}",
+    booktitle = {Proceedings of the 25th ACM Symposium on Operating System Principles (SOSP'15)},
+    month = OCT,
+    year = 2015,
+}
+
+@article{Tseitlin:2013,
+author = {Tseitlin, Ariel},
+title = "{The Antifragile Organization}",
+year = {2013},
+volume = {56},
+number = {8},
+journal = {Communications of the ACM},
+month = AUG,
+pages = {40–44}
+}
+
+@ARTICLE{Basiri:2016,
+author={Basiri, Ali and Behnam, Niosha and de Rooij, Ruud and Hochstein, Lorin and Kosewski, Luke and Reynolds, Justin and Rosenthal, Casey},
+journal={IEEE Software},
+title="{Chaos Engineering}",
+year={2016},
+month = MAR,
+volume={33},
+number={3},
+pages={35-41},
+}
+
+
+
+@misc {k8s,
+  title={Kubernetes},
+  howpublished={\url{https://kubernetes.io/}},
+  year={2020}
+}
+
+@misc {resource_version,
+  title={Resource versions},
+  howpublished={\url{https://kubernetes.io/docs/reference/using-api/api-concepts/#resource-versions}},
+  year={2021}
+}
+
+@misc {how_finalizers_work,
+  title={How finalizers work},
+  howpublished={\url{https://kubernetes.io/docs/concepts/overview/working-with-objects/finalizers/#how-finalizers-work}},
+  year={2021}
+}
+
+@misc {differentialdataflow,
+  title="{Differential Dataflow}",
+  howpublished = {\url{https://github.com/frankmcsherry/differential-dataflow}},
+  year = {2019}
+}
+
+@misc {k8s-gap-watch,
+  title="{Efficient watch resumption after kube-apiserver reboot}",
+  howpublished={\url{https://github.com/kubernetes/enhancements/blob/master/keps/sig-api-machinery/1904-efficient-watch-resumption/README.md}},
+  year = {2021}
+}
+
+@misc{etcd_watch,
+  title = "{etcd API}",
+  howpublished = "\url{https://etcd.io/docs/v3.4.0/learning/api/}",
+  year = {2021}
+}
+
+@misc{zk_watch,
+  title = "{ZooKeeper Watches}",
+  howpublished = "\url{https://zookeeper.apache.org/doc/r3.3.3/zookeeperProgrammers.html\#ch_zkWatches}",
+  year = {2020}
+}
+
+@misc{k8s_arch,
+  title = "{Kubernetes Components}",
+  howpublished = "\url{https://kubernetes.io/docs/concepts/overview/components/}",
+  year = {2021}
+}
+
+@misc{mesos_arch,
+  title = "{Mesos Architecture}",
+  howpublished = "\url{http://mesos.apache.org/documentation/latest/architecture/}",
+}
+
+@inproceedings{mesos-paper,
+  author = {Hindman, Benjamin and Konwinski, Andy and Zaharia, Matei and Ghodsi, Ali and Joseph, Anthony D. and Katz, Randy and Shenker, Scott and Stoica, Ion},
+  title = "{Mesos: A Platform for Fine-Grained Resource Sharing in the Data Center}",
+  year = {2011},
+  booktitle = {Proceedings of the 8th USENIX Conference on Networked Systems Design and Implementation (NSDI'11)},
+  month = MAR
+}
+
+@misc{k8s_api,
+  title = "{Kubernetes API Concepts}",
+  howpublished = "\url{https://kubernetes.io/docs/reference/using-api/api-concepts}",
+  year = {2021}
+}
+
+@misc{k8s_client_go_cache,
+  title = "{k8s.io/client-go/tools/cache}",
+  howpublished = "\url{https://pkg.go.dev/k8s.io/client-go/tools/cache}",
+  year = {2021}
+}
+
+@misc{istio_arch,
+  title = "{Istio Architecture}",
+  howpublished = "\url{https://istio.io/latest/docs/ops/deployment/architecture/}",
+}
+
+@misc{openstack_arch,
+  title = "{OpenStack Logical architecture}",
+  howpublished = "\url{https://docs.openstack.org/install-guide/get-started-logical-architecture.html}",
+}
+
+@misc {hdfs,
+  title={HDFS Architecture},
+  howpublished={\url{https://hadoop.apache.org/docs/r3.2.2/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html}},
+  year={2020}
+}
+
+@misc {hbase,
+  title={Apache HBase},
+  howpublished={\url{https://hbase.apache.org/}},
+  year={2020}
+}
+
+@misc {yarn,
+  title={Apache Hadoop YARN},
+  howpublished={\url{https://hadoop.apache.org/docs/r3.2.2/hadoop-yarn/hadoop-yarn-site/YARN.html}},
+  year={2020}
+}
+
+@misc {zookeeper,
+  title={Apache ZooKeeper},
+  howpublished={\url{https://zookeeper.apache.org/}},
+}
+
+@misc {etcd,
+  title={etcd},
+  howpublished={\url{https://etcd.io/}},
+  year={2021}
+}
+
+@inproceedings{chubby,
+  title = "{The Chubby Lock Service for Loosely-Coupled Distributed Systems}",
+  author = {Mike Burrows},
+  year = {2006},
+  month = NOV,
+  booktitle = {Proceedings of the 7th Symposium on Operating Systems Design and Implementation (OSDI'06)}
+}
+
+@inproceedings{zookeeper-paper,
+  author = {Hunt, Patrick and Konar, Mahadev and Junqueira, Flavio P. and Reed, Benjamin},
+  title = "{ZooKeeper: Wait-Free Coordination for Internet-Scale Systems}",
+  year = {2010},
+  month = JUN,
+  booktitle = {Proceedings of the 2010 USENIX Conference on USENIX Annual Technical Conference (USENIX ATC'10)}
+}
+
+@misc {cassandra,
+  title={Apache Cassandra},
+  howpublished={\url{https://cassandra.apache.org/}},
+  year={2020}
+}
+
+@misc {chaosmonkey,
+  title={Chaos Monkey},
+  howpublished={\url{https://netflix.github.io/chaosmonkey/}},
+  year={2020}
+}
+
+@misc {protobuf,
+  title={Protocol buffers},
+  howpublished={\url{https://developers.google.com/protocol-buffers}},
+  year={2020}
+}
+
+@misc {k8s-watchcache,
+  title={apiserver-watch.md},
+  howpublished={\url{https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/apiserver-watch.md}},
+  year = {2017}
+}
+
+@misc {k8s-6678,
+  title={Create a cache in apiserver to improve its performance},
+  howpublished={\url{https://github.com/kubernetes/kubernetes/issues/6678}},
+  year={2015}
+}
+
+@misc {k8s-30698,
+  author = "{Kubernetes-30698}",
+  title = {Make it possible to write a sound client from a distributed-systems perspective},
+  howpublished = {\url{https://github.com/kubernetes/kubernetes/issues/30698}},
+  month = AUG,
+  year = {2016}
+}
+
+@misc {k8s-web-26064,
+  author = "{Kubernetes-website-26064}",
+  title = "{Clarify "resourceVersion unset" semantics in Watch}",
+  howpublished = {\url{https://github.com/kubernetes/website/issues/26064}},
+  year = {2021},
+  month = JAN,
+}
+
+@misc {k8s-web-26064-comment,
+  title="{Comment on Kubernetes-website-26064: Clarify "resourceVersion unset" semantics in Watch}",
+  howpublished={\url{https://github.com/kubernetes/website/issues/26064\#issuecomment-759747611}},
+  year = 2021,
+  month = JAN,
+}
+
+@misc {k8s-59848,
+  author = "{Kubernetes-59848}",
+  title={Kubernetes is vulnerable to stale reads, violating critical pod safety guarantees},
+  howpublished={\url{https://github.com/kubernetes/kubernetes/issues/59848}},
+  month = FEB,
+  year = 2018,
+}
+
+@misc {k8s-59848-comment,
+  title="{Comment on Kubernetes-59848: Kubernetes is vulnerable to stale reads, violating critical pod safety guarantees}",
+  howpublished={\url{https://github.com/kubernetes/kubernetes/issues/59848\#issuecomment-525833106}},
+  year = 2019,
+  month = AUG,
+}
+
+@misc {k8s-56261,
+  author = "{Kubernetes-56261}",
+  title="{Scheduler should delete a node from its cache if it gets "node not found" error}",
+  howpublished={\url{https://github.com/kubernetes/kubernetes/issues/56261}},
+  year = 2017,
+  month = NOV,
+}
+
+@misc {HBase-3136,
+  author = "{HBASE-3136}",
+  title="{Stale reads from ZK can break the atomic CAS operations we have in ZKAssign}",
+  howpublished={\url{https://issues.apache.org/jira/browse/HBASE-3136}},
+  month = OCT,
+  year = 2010,
+}
+
+@misc {HBase-3137,
+  author = "{HBASE-3137}",
+  title="{Optimize CAS operations in ZKAssign by being optimistic rather than always doing a sync()}",
+  howpublished={\url{https://issues.apache.org/jira/browse/HBASE-3137}},
+  month = OCT,
+  year = 2010,
+}
+
+@misc {HDFS-11708,
+  author = "{HDFS-11708}",
+  title="{Positional read will fail if replicas moved to different DNs after stream is opened}",
+  howpublished={\url{https://issues.apache.org/jira/browse/HDFS-11708}},
+  month = APR,
+  year = 2017,
+}
+
+@misc {YARN-5918,
+  title={Handle Opportunistic scheduling allocate request failure when NM is lost},
+  howpublished={\url{https://issues.apache.org/jira/browse/YARN-5918}},
+  year={2016}
+}
+
+@misc{k8s-93210,
+  title="{MirrorPodWithGracePeriod test flaking in 5\% of pull-kubernetes-node-e2e runs}",
+  howpublished={\url{https://github.com/kubernetes/kubernetes/issues/93210}},
+  year={2020}
+}
+
+@misc{HBASE-575,
+  author = "{HBASE-575}",
+  title="{Region sever looking for master forever with cached stale data}",
+  howpublished={\url{https://issues.apache.org/jira/browse/HBASE-5755}},
+  year = 2012,
+  month = APR,
+}
+
+@misc{HDFS-6289,
+  title="{HA failover can fail if there are pending DN messages for DNs which no longer exist.}",
+  howpublished={\url{https://issues.apache.org/jira/browse/HDFS-6289}},
+  year={2014}
+}
+
+
+@misc{HDFS-5322,
+  author = "{HDFS-5322}",
+  title="{HDFS delegation token not found in cache errors seen on secure HA clusters.}",
+  howpublished={\url{https://issues.apache.org/jira/browse/HDFS-5322}},
+  month = OCT,
+  year = 2013,
+}
+
+@misc {argo-cd-1605,
+  title={Need to handle stale kubernetes watch cache},
+  howpublished={\url{https://github.com/argoproj/argo-cd/issues/1605}},
+  year={2019}
+}
+
+@misc {cassandra-operator-400,
+  author = "{Cassandra-operator-400}",
+  title="{Cassandra node can be decommissioned wrongly which blocks scale down}",
+  howpublished={\url{https://github.com/instaclustr/cassandra-operator/issues/400}},
+  month = JAN,
+  year = 2021,
+}
+
+@misc {cassandra-operator-402,
+  author = "{Cassandra-operator-402}",
+  title="{PVC can be accidentally deleted when controller reads stale data from apiserver}",
+  howpublished={\url{https://github.com/instaclustr/cassandra-operator/issues/402}},
+  month = JAN,
+  year = 2021,
+}
+
+@misc {argo-cd,
+  title="{Argo CD - Declarative Continuous Delivery for Kubernetes}",
+  howpublished={\url{https://github.com/argoproj/argo-cd}},
+  year={2020}
+}
+
+@misc {pai-4120,
+  title="{P0.5: Disallow ApiServer HA for Pod Safety}",
+  howpublished={\url{https://github.com/microsoft/pai/issues/4120}},
+  year={2020}
+}
+
+@misc {pai,
+  title="{Open Platform for AI (OpenPAI)}",
+  howpublished={\url{https://github.com/microsoft/pai}},
+  year={2020}
+}
+
+@misc {jepsen,
+  title={Jepsen},
+  howpublished={\url{https://jepsen.io/}},
+  year={2020}
+}
+
+@misc {coq,
+  title={Coq'Art Home page},
+  howpublished={\url{https://www.labri.fr/perso/casteran/CoqArt/index.html}},
+  year={2004}
+}
+
+@article{lincoln2003specifying,
+  title={Specifying Systems: The TLA+ Language and Tools for Hardware and Software Engineers},
+  author={Lincoln, Carolyn Rodda},
+  journal={Software Quality Professional},
+  volume={5},
+  number={4},
+  pages={43},
+  year={2003},
+  publisher={American Society for Quality}
+}
+
+@incollection{lamport2019part,
+  title={The part-time parliament},
+  author={Lamport, Leslie},
+  booktitle={Concurrency: the Works of Leslie Lamport},
+  pages={277--317},
+  year={2019}
+}
+
+@inproceedings{ongaro2014search,
+  title={In search of an understandable consensus algorithm},
+  author={Ongaro, Diego and Ousterhout, John},
+  booktitle={2014 $\{$USENIX$\}$ Annual Technical Conference ($\{$USENIX$\}$$\{$ATC$\}$ 14)},
+  pages={305--319},
+  year={2014}
+}
+
+% DC bugs
+
+@inproceedings{leesatapornwongsa2016taxdc,
+  author = {Tanakorn Leesatapornwongsa and Jeffrey F. Lukman and Shan Lu and Haryadi S. Gunawi},
+  title = "{TaxDC: A Taxonomy of Non-Deterministic Concurrency Bugs in Datacenter Distributed Systems}",
+  booktitle = {Proceedings of the 21st International Conference on Architecture Support for Programming Languages and Operating Systems (ASPLOS'16)},
+  month = APR,
+  year = {2016},
+}
+
+@inproceedings{liu2017dcatch,
+  author = {Haopeng Liu and Guangpu Li and Jeffrey F. Lukman and Jiaxin Li and Shan Lu and Haryadi S. Gunawi and Chen Tian},
+  title = "{DCatch: Automatically Detecting Distributed Concurrency Bugs in Cloud Systems}",
+  booktitle = {Proceedings of the 22nd International Conference on Architecture Support for Programming Languages and Operating Systems (ASPLOS'17)},
+  month = APR,
+  year = {2017},
+}
+
+@inproceedings{liu2018fcatch,
+  author = {Haopeng Liu and Xu Wang and Guangpu Li and Shan Lu and Feng Ye and Chen Tian},
+  title = "{FCatch: Automatically Detecting Time-of-fault Bugs in Cloud Systems}",
+  booktitle = {Proceedings of the 23rd International Conference on Architecture Support for Programming Languages and Operating Systems (ASPLOS'18)},
+  month = MAR,
+  year = {2018},
+}
+
+@inproceedings{li2019dfix,
+  author = {Guangpu Li and Haopeng Liu and Xianglan Chen and Haryadi S. Gunawi and Shan Lu},
+  title = "{DFix: Automatically Fixing Timing Bugs in Distributed Systems}",
+  booktitle = {Proceedings of the 40th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'19)},
+  month = JUN,
+  year = {2019},
+}
+
+% bug finding by injecting failures (reordering)
+@inproceedings{yuan2020effective,
+  author = {Xinhao Yuan and Junfeng Yang},
+  title = "{Effective Concurrency Testing for Distributed Systems}",
+  booktitle = {Proceedings of the 25th International Conference on Architecture Support for Programming Languages and Operating Systems (ASPLOS'20)},
+  month = MAR,
+  year = {2020},
+}
+
+@inproceedings{Tang:2020,
+  author = {Chunqiang Tang and Kenny Yu and Kaushik Veeraraghavan and Jonathan Kaldor and Scott Michelson and Thawan Kooburat and Aravind Anbudurai and Matthew Clark and Kabir Gogia and Long Cheng and Ben Christensen and Alex Gartrell and Maxim Khutornenko and Sachin Kulkarni and Marcin Pawlowski and Tuomas Pelkonen and Andre Rodrigues and Rounak Tibrewal and Vaishnavi Venkatesan and Peter Zhang},
+  title = "{Twine: A Unified Cluster Management System for Shared Infrastructure}",
+  booktitle = {Proceedings of the 14th USENIX Conference on Operating Systems Design and Implementation (OSDI'20)},
+  month = NOV,
+  year = {2020},
+}
+
+@inproceedings{alquraan2018analysis,
+  author = {Ahmed Alquraan and Hatem Takruri and Mohammed Alfatafta and Samer Al-Kiswany},
+  title = "{An Analysis of Network-Partitioning Failures in Cloud Systems}",
+  booktitle = {Proceedings of the 13th USENIX Conference on Operating Systems Design and Implementation (OSDI'18)},
+  month = OCT,
+  year = {2018},
+}
+
+@inproceedings{gunawi2011fate,
+  author = {Haryadi S. Gunawi and Thanh Do and Pallavi Joshi and Peter Alvaro and Joseph M. Hellerstein and Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau and Koushik Sen and Dhruba Borthakur},
+  title =	 "{Fate and Destini: A Framework for Cloud Recovery Testing}",
+  booktitle =	{Proceedings of the 8th USENIX Symposium on Networked Systems Design and Implementation (NSDI'11)},
+  year = {2011},
+  month = MAR,
+}
+
+@inproceedings{lu2019crashtuner,
+  author = {Jie Lu and Chen Liu and Lian Li and Xiaobing Feng and Feng Tan and Jun Yang and Liang You},
+  title = "{CrashTuner: Detecting Crash-Recovery Bugs in Cloud Systems via Meta-Info Analysis}",
+  booktitle = {Proceedings of the 26th ACM Symposium on Operating System Principles (SOSP'19)},
+  month = OCT,
+  year = {2019},
+}
+
+@inproceedings{chen2020cofi,
+  author = {Haicheng Chen and Wensheng Dou and Dong Wang and Feng Qin},
+  title = "{CoFI: Consistency-Guided Fault Injection for Cloud Systems}",
+  booktitle = {Proceedings of the 35th ACM/IEEE International Conference on Automated Software Engineering (ASE'20)},
+  month = SEP,
+  year = {2020}
+}
+
+% consistency in distributed storage systems
+@inproceedings{alagappan2016correlated,
+  author = {Ramnatthan Alagappan and Aishwarya Ganesan and Yuvraj Patel and Thanumalayan Sankaranarayana Pillai and Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau},
+  title = "{Correlated Crash Vulnerabilities}",
+  booktitle = {Proceedings of the 12th USENIX Conference on Operating Systems Design and Implementation (OSDI'16)},
+  month = NOV,
+  year = {2016}
+}
+
+@inproceedings{ganesan2017redundancy,
+  author = {Aishwarya Ganesan and Ramnatthan Alagappan and Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau},
+  title = "{Redundancy Does Not Imply Fault Tolerance: Analysis of Distributed Storage Reactions to Single Errors and Corruptions}",
+  booktitle = {Proceedings of the 15th USENIX Conference on File and Storage Technologies (FAST’17)},
+  month = FEB,
+  year = {2017},
+}
+
+@inproceedings{alagappan2018fault,
+  author = {Ramnatthan Alagappan and Aishwarya Ganesan and Jing Liu and Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau},
+  title = "{Fault-Tolerance, Fast and Slow: Exploiting Failure Asynchrony in Distributed Systems}",
+  booktitle = {Proceedings of the 13th USENIX Conference on Operating Systems Design and Implementation (OSDI'18)},
+  month = OCT,
+  year = {2018},
+}
+
+@inproceedings{mohan2018b3,
+  author = {Jayashree Mohan and Ashlie Martinez and Soujanya Ponnapalli and Pandian Raju and Vijay Chidambaram},
+  title = "{Finding Crash-Consistency Bugs with Bounded Black-Box Crash Testing}",
+  booktitle = {Proceedings of the 13th USENIX Conference on Operating Systems Design and Implementation (OSDI'18)},
+  month = OCT,
+  year = {2018},
+}
+
+@inproceedings{alagappan2018protocol,
+  author = {Ramnatthan Alagappan and Aishwarya Ganesan and Eric Lee and Aws Albarghouthi and Vijay Chidambaram and Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau},
+  title = "{Protocol-Aware Recovery for Consensus-Based Storage}",
+  booktitle = {Proceedings of the 16th USENIX Conference on File and Storage Technologies (FAST'18)},
+  month = FEB,
+  year = {2018},
+}
+
+@inproceedings{ganesan2020strong,
+  author = {Aishwarya Ganesan and Ramnatthan Alagappan and Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau},
+  title = "{Strong and Efficient Consistency with Consistency-Aware Durability}",
+  booktitle = {Proceedings of the 18th USENIX Conference on File and Storage Technologies (FAST'20)},
+  month = FEB,
+  year = {2020}
+}
+
+% verification
+@inproceedings{hawblitzel2015ironfleet,
+  title={IronFleet: proving practical distributed systems correct},
+  author={Hawblitzel, Chris and Howell, Jon and Kapritsos, Manos and Lorch, Jacob R and Parno, Bryan and Roberts, Michael L and Setty, Srinath and Zill, Brian},
+  booktitle={Proceedings of the 25th Symposium on Operating Systems Principles},
+  pages={1--17},
+  year={2015}
+}
+
+@inproceedings{sun:osdi:20,
+  author = {Xudong Sun and Runxiang Cheng and Jianyan Chen and Elaine Ang and Owolabi Legunsen and Tianyin Xu},
+  title = "{Testing Configuration Changes in Context to Prevent Production Failures}",
+  booktitle = {Proceedings of the 14th USENIX Symposium on Operating Systems Design and Implementation (OSDI'20)},
+  month = NOV,
+  year = 2020,
+}
+
+@inproceedings{wilcox2015verdi,
+  title={Verdi: a framework for implementing and formally verifying distributed systems},
+  author={Wilcox, James R and Woos, Doug and Panchekha, Pavel and Tatlock, Zachary and Wang, Xi and Ernst, Michael D and Anderson, Thomas},
+  booktitle={Proceedings of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+  pages={357--368},
+  year={2015}
+}
+
+@article{desai2013p,
+  title={P: safe asynchronous event-driven programming},
+  author={Desai, Ankush and Gupta, Vivek and Jackson, Ethan and Qadeer, Shaz and Rajamani, Sriram and Zufferey, Damien},
+  journal={ACM SIGPLAN Notices},
+  volume={48},
+  number={6},
+  pages={321--332},
+  year={2013},
+  publisher={ACM New York, NY, USA}
+}
+
+% distributed systems model checking
+@inproceedings{yang2009modist,
+  author = {Junfeng Yang and Tisheng Chen and Ming Wu and Zhilei Xu and Xuezheng Liu and Haoxiang Lin and Mao Yang and Fan Long and Lintao Zhang and Lidong Zhou},
+  title = "{MODIST: Transparent Model Checking of Unmodified Distributed Systems}",
+  booktitle = {Proceedings of the 6th USENIX Symposium on Networked Systems Design and Implementation (NSDI'09)},
+  month = APR,
+  year = {2009}
+}
+
+@inproceedings{simsa2010dbug,
+  title={dBug: systematic evaluation of distributed systems},
+  author={Simsa, Jiri and Bryant, Randal E and Gibson, Garth},
+  year={2010},
+  organization={USENIX}
+}
+
+@inproceedings{yuan:14,
+  author = {Ding Yuan and Yu Luo and Xin Zhuang and Guilherme Rodrigues and Xu Zhao and Yongle Zhang and Pranay U. Jain and Michael Stumm},
+  title = "{Simple Testing Can Prevent Most Critical Failures: An Analysis of Production Failures in Distributed Data-intensive Systems}",
+  booktitle = {Proceedings of the 11th USENIX Conference on Operating Systems Design and Implementation (OSDI'14)},
+  month = OCT,
+  year = {2014},
+}
+
+@inproceedings{killian2007mace,
+  author = {Killian, Charles Edwin and Anderson, James W. and Braud, Ryan and Jhala, Ranjit and Vahdat, Amin M.},
+  title = "{Mace: Language Support for Building Distributed Systems}",
+  booktitle = {Proceedings of the 28th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'07)},
+  month = JUN,
+  year = {2007}
+}
+
+@inproceedings{killian2007life,
+  title="{Life, death, and the critical transition: Finding liveness bugs in systems code}",
+  author={Killian, Charles and Anderson, James W and Jhala, Ranjit and Vahdat, Amin},
+  booktitle = {Proceedings of the 4th USENIX Conference on Networked Systems Design and Implementation (NSDI'07)},
+  year={2007},
+  month = APR
+}
+
+@inproceedings{yabandeh2009crystalball,
+  title = "{CrystalBall: Predicting and Preventing Inconsistencies in Deployed Distributed Systems}",
+  author = {Yabandeh, Maysam and Knezevic, Nikola and Kostic, Dejan and Kuncak, Viktor},
+  booktitle = {Proceedings of the 6th USENIX Symposium on Networked Systems Design and Implementation (NSDI'09)},
+  month = APR,
+  year = {2009}
+}
+
+@inproceedings{guo2011practical,
+  title = "{Practical Software Model Checking via Dynamic Interface Reduction}",
+  author = {Guo, Huayang and Wu, Ming and Zhou, Lidong and Hu, Gang and Yang, Junfeng and Zhang, Lintao},
+  booktitle = {Proceedings of the 23rd ACM Symposium on Operating Systems Principles (SOSP'11)},
+  month = OCT,
+  year = {2011}
+}
+
+@inproceedings{deligiannis2016uncovering,
+  title="{Uncovering Bugs in Distributed Storage Systems during Testing (not in Production!)}",
+  author={Deligiannis, Pantazis and McCutchen, Matt and Thomson, Paul and Chen, Shuo and Donaldson, Alastair F and Erickson, John and Huang, Cheng and Lal, Akash and Mudduluru, Rashmi and Qadeer, Shaz and Wolfram Schulte},
+  booktitle={Proceedings of the 14th USENIX Conference on File and Storage Technologies (FAST'16)},
+  month = FEB,
+  year={2016}
+}
+
+@inproceedings{leesatapornwongsa2014samc,
+  author = {Tanakorn Leesatapornwongsa and Mingzhe Hao and Pallavi Joshi and Jeffrey F. Lukman and Haryadi S. Gunawi},
+  title = "{SAMC: Semantic-Aware Model Checking for Fast Discovery of Deep Bugs in Cloud Systems}",
+  booktitle = {Proceedings of the 11th USENIX Conference on Operating Systems Design and Implementation (OSDI'14)},
+  month = OCT,
+  year = {2014},
+}
+
+@inproceedings{lukman2019flymc,
+  title="{FlyMC: Highly Scalable Testing of Complex Interleavings in Distributed Systems}",
+  author={Lukman, Jeffrey F. and Ke, Huan and Stuardo, Cesar A. and Suminto, Riza O. and Kurniawan, Daniar H. and Simon, Dikaimin and Priambada, Satria and Tian, Chen and Ye, Feng and Leesatapornwongsa, Tanakorn and Gupta, Aarti and Lu, Shan and Gunawi, Haryadi S.},
+  booktitle={Proceedings of the 14th EuroSys Conference 2019 (EuroSys'19)},
+  year={2019},
+  month=MAR
+}
+
+@inproceedings{golab2011analyzing,
+  title = "{Analyzing Consistency Properties for Fun and Profit}",
+  author = {Golab, Wojciech and Li, Xiaozhou and Shah, Mehul A.},
+  booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing (PODC'11)},
+  month = JUN,
+  year = {2011}
+}
+
+@inproceedings{cobra2020,
+  author = {Cheng Tan and Changgeng Zhao and Shuai Mu and Michael Walfish},
+  title = "{Cobra: Making Transactional Key-Value Stores Verifiably Serializable}",
+  booktitle = {Proceedings of the 14th USENIX Symposium on Operating Systems Design and Implementation (OSDI'20)},
+  month = NOV,
+  year = {2020}
+}
+
+
+@inproceedings{pillai2014all,
+  author = {Pillai, Thanumalayan Sankaranarayana and Chidambaram, Vijay and Alagappan, Ramnatthan and Al-Kiswany, Samer and Arpaci-Dusseau, Andrea C. and Arpaci-Dusseau, Remzi H.},
+  title = "{All File Systems Are Not Created Equal: On the Complexity of Crafting Crash-consistent Applications}",
+  booktitle = {Proceedings of the 11th Symposium on Operating Systems Design and Implementation (OSDI'14)},
+  month = OCT,
+  year = {2014}
+}
+
+@inproceedings{yang2006explode,
+  title = "{EXPLODE: a Lightweight, General System for Finding Serious Storage System Errors}",
+  author = {Yang, Junfeng and Sar, Can and Engler, Dawson},
+  booktitle = {Proceedings of the 7th Symposium on Operating Systems Design and Implementation (OSDI'06)},
+  month = NOV,
+  year = {2006}
+}
+
+@article{autopilot,
+  author = {Isard, Michael},
+  title = "{Autopilot: Automatic Data Center Management}",
+  year = {2007},
+  issue_date = {April 2007},
+  publisher = {Association for Computing Machinery},
+  volume = {41},
+  number = {2},
+  journal = {SIGOPS Oper. Syst. Rev.},
+  month = apr,
+  pages = {60–67},
+  numpages = {8},
+  keywords = {automatic management, cluster computing}
+}
+
+@inproceedings{borg,
+  author = {Verma, Abhishek and Pedrosa, Luis and Korupolu, Madhukar and Oppenheimer, David and Tune, Eric and Wilkes, John},
+  title = "{Large-Scale Cluster Management at Google with Borg}",
+  booktitle = {Proceedings of the 10th European Conference on Computer Systems (EuroSys'15)},
+  month = APR,
+  year = {2015}
+}
+
+@inproceedings{omega,
+  author = {Schwarzkopf, Malte and Konwinski, Andy and Abd-El-Malek, Michael and Wilkes, John},
+  title = "{Omega: Flexible, Scalable Schedulers for Large Compute Clusters}",
+  year = {2013},
+  month = APR,
+  booktitle = {Proceedings of the 8th ACM European Conference on Computer Systems (EuroSys'13)}
+}
+
+@techreport{musuvathi2007chess,
+  author = {Musuvathi, Madan and Qadeer, Shaz and Ball, Thomas},
+  title = "{CHESS: A Systematic Testing Tool for Concurrent Software}",
+  year = {2007},
+  month = {November},
+  url = {https://www.microsoft.com/en-us/research/publication/chess-a-systematic-testing-tool-for-concurrent-software/},
+  pages = {16},
+  number = {MSR-TR-2007-149},
+}
+
+@article{cheung2021new,
+  title = "{New Directions in Cloud Programming}",
+  author = {Cheung, Alvin and Crooks, Natacha and Hellerstein, Joseph M and Milano, Matthew},
+  journal = {arXiv preprint arXiv:2101.01159},
+  month = JAN,
+  year = {2021}
+}
+
+@inproceedings{gray1989lease,
+  author = {Gray, C. and Cheriton, D.},
+  title = "{Leases: An Efficient Fault-Tolerant Mechanism for Distributed File Cache Consistency}",
+  booktitle = {Proceedings of the Twelfth ACM Symposium on Operating Systems Principles (SOSP'89)},
+  month = NOV,
+  year = {1989}
+}
+
+
+@inproceedings{li2021sherlock,
+  author = {Li, Guangpu and Chen, Dongjie and Lu, Shan and Musuvathi, Madanlal and Nath, Suman},
+  title = "{SherLock: Unsupervised Synchronization-Operation Inference}",
+  booktitle = {Proceedings of the 26th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS'21)},
+  month = MAR,
+  year = {2021}
+}
+
+@inproceedings{li2019efficient,
+  author = {Li, Guangpu and Lu, Shan and Musuvathi, Madanlal and Nath, Suman and Padhye, Rohan},
+  title = "{Efficient Scalable Thread-Safety-Violation Detection: Finding Thousands of Concurrency Bugs during Testing (SOSP'19)}",
+  year = {2019},
+  month = OCT,
+  booktitle = {Proceedings of the 27th ACM Symposium on Operating Systems Principles},
+}
+
+@inproceedings{ongaro2014in,
+author = {Ongaro, Diego and Ousterhout, John},
+title = "{In Search of an Understandable Consensus Algorithm}",
+year = {2014},
+month = JUN,
+booktitle = {Proceedings of the 2014 USENIX Conference on USENIX Annual Technical Conference (USENIX ATC'14)}
+}
+
+@inproceedings{majumdar2018why,
+author = {Majumdar, Rupak and Niksic, Filip},
+title = "{Why is Random Testing Effective for Partition Tolerance Bugs?}",
+year = {2018},
+month = JAN,
+booktitle = {Proceedings of the 45th ACM SIGPLAN Symposium on Principles of Programming Languages (POPL'18)}
+}
+
+@inproceedings{ozkan2018randomized,
+author = {Ozkan, Burcu Kulahcioglu and Majumdar, Rupak and Niksic, Filip and Befrouei, Mitra Tabaei and Weissenbacher, Georg},
+title = "{Randomized Testing of Distributed Systems with Probabilistic Guarantees}",
+booktitle = {Proceedings of 2018 ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA'18)},
+month = NOV,
+year = {2018},
+}
+
+@inproceedings{ozkan2018trace,
+author = {Ozkan, Burcu Kulahcioglu and Majumdar, Rupak and Oraee, Simin},
+title = "{Trace Aware Random Testing for Distributed Systems}",
+booktitle = {Proceedings of 2019 ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA'19)},
+month = OCT,
+year = {2019},
+}
+
+@inproceedings{dragoi2020testing,
+author = {Dr\u{a}goi, Cezara and Enea, Constantin and Ozkan, Burcu Kulahcioglu and Majumdar, Rupak and Niksic, Filip},
+title = "{Testing Consensus Implementations Using Communication Closure}",
+booktitle = {Proceedings of 2020 ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA'20)},
+year = {2020},
+month = NOV,
+}
+
+
+@inproceedings{kingsbury2020elle,
+author = {Kingsbury, Kyle and Alvaro, Peter},
+title = "{Elle: Inferring Isolation Anomalies from Experimental Observations}",
+booktitle = {Proceedings of the 46th International Conference on Very Large Data Bases (VLDB'20)},
+month = AUG,
+year = {2020},
+}
+
+@misc {mongdbop,
+  title={Percona Distribution for MongoDB Operator},
+  howpublished={\url{https://www.percona.com/doc/kubernetes-operator-for-psmongodb/index.html}},
+  year={2021}
+}
+
+@misc {twine-zookeeper,
+  title="{Containerizing ZooKeeper with Twine: Powering container orchestration from within}",
+  howpublished={\url{https://engineering.fb.com/2020/08/31/developer-tools/zookeeper-twine/}},
+  month = AUG,
+  year = 2020,
+}
+
+@misc {k8s-etcd,
+  title="{Operating etcd clusters for Kubernetes}",
+  howpublished={\url{https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/}},
+  month = OCT,
+  year = 2021,
+}
+
+@inproceedings{sun2021reasoning,
+author = {Sun, Xudong and Suresh, Lalith and Ganesan, Aishwarya and Alagappan, Ramnatthan and Gasch, Michael and Tang, Lilia and Xu, Tianyin},
+title = "{Reasoning about Modern Datacenter Infrastructures Using Partial Histories}",
+year = {2021},
+month = JUN,
+booktitle = {Proceedings of the Workshop on Hot Topics in Operating Systems (HotOS'21)},
+}
+
+@misc {sts-scale-down,
+  title="{StatefulSet support for clean decommission on scale down}",
+  howpublished={\url{https://github.com/kubernetes/kubernetes/issues/59343}},
+  month = MAY,
+  year = 2018,
+}
+
+@misc {rabbitmq-scale-down,
+  title="{Scale down}",
+  howpublished={\url{https://github.com/rabbitmq/cluster-operator/issues/223}},
+  month = JUL,
+  year = 2020,
+}
+
+@inproceedings{do2013limplock,
+author = {Do, Thanh and Hao, Mingzhe and Leesatapornwongsa, Tanakorn and Patana-anake, Tiratat and Gunawi, Haryadi S.},
+title = "{Limplock: Understanding the Impact of Limpware on Scale-out Cloud Systems}",
+year = {2013},
+month = OCT,
+booktitle = {Proceedings of the 4th Annual Symposium on Cloud Computing (SOCC'13)},
+}
+
+@misc {controller-runtime,
+  title="{kubernetes-sigs/controller-runtime}",
+  howpublished={\url{https://github.com/kubernetes-sigs/controller-runtime}},
+  year = 2021,
+}
+
+@misc {client-go,
+  title="{kubernetes/client-go}",
+  howpublished={\url{https://github.com/kubernetes/client-go}},
+  year = 2021,
+}
+
+
+@misc {reconcile-pkg,
+  title="{reconcile package}",
+  howpublished={\url{https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/reconcile}},
+  year = 2021,
+}
+
+@misc {controller_and_reconciliation,
+  title="{Controllers and Reconciliation}",
+  howpublished={\url{https://cluster-api.sigs.k8s.io/developer/providers/implementers-guide/controllers_and_reconciliation.html}},
+  year = 2021,
+}
+
+@misc {terminating_with_grace,
+  author={Sandeep Dinesh},
+  title="{Kubernetes best practices: terminating with grace}",
+  howpublished={\url{https://cloud.google.com/blog/products/containers-kubernetes/kubernetes-best-practices-terminating-with-grace}},
+  year={2018},
+  month=MAY
+}
+
+@misc {use_finalizer_control_deletion,
+  author={Aaron Alpar},
+  title="{Using Finalizers to Control Deletion}",
+  howpublished={\url{https://kubernetes.io/blog/2021/05/14/using-finalizers-to-control-deletion/}},
+  year={2021},
+  month=MAY
+}
+
+@misc {what-is-a-level-based-api,
+  title="{What is a Level Based API}",
+  howpublished={\url{https://book-v1.book.kubebuilder.io/basics/what_is_a_controller.html}},
+  year = 2021,
+}
+
+@misc {k8s-20572,
+  title="{Support "Delete" and "Get" via UID or with UID as a precondition}",
+  howpublished={\url{https://github.com/kubernetes/kubernetes/issues/20572}},
+  month = NOV,
+  year = 2018,
+}
+
+@misc {k8s-nodeport,
+  title="{Kubernetes NodePort}",
+  howpublished={\url{https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport}},
+  year = 2021,
+}
+
+@misc {cass-operator,
+  title="{The DataStax Kubernetes Operator for Apache Cassandra}",
+  howpublished={\url{https://github.com/datastax/cass-operator}},
+  year = 2021,
+}
+
+@misc {cassandra-operator,
+  title="{Kubernetes operator for Apache Cassandra}",
+  howpublished={\url{https://github.com/instaclustr/cassandra-operator}},
+  year = 2021,
+}
+
+@misc {casskop,
+  title="{Cassandra Kubernetes operator}",
+  howpublished={\url{https://github.com/Orange-OpenSource/casskop}},
+  year = 2021,
+}
+
+@misc {mongodb-operator,
+  title="{Percona Distribution for MongoDB Operator}",
+  howpublished={\url{https://github.com/percona/percona-server-mongodb-operator}},
+  year = 2021,
+}
+
+@misc {nifikop,
+  title="{NiFi Kubernetes operator}",
+  howpublished={\url{https://github.com/Orange-OpenSource/nifikop}},
+  year = 2021,
+}
+
+@misc {rabbitmq-operator,
+  title="{RabbitMQ Cluster Kubernetes Operator}",
+  howpublished={\url{https://github.com/rabbitmq/cluster-operator}},
+  year = 2021,
+}
+
+@misc {operators,
+title="{Kubernetes Operators}",
+howpublished={\url{https://kubernetes.io/docs/concepts/extend-kubernetes/operator/}},
+year = 2021,
+}
+
+@misc {kind,
+title="{kind: Kubernetes IN Docker - local clusters for testing Kubernetes}",
+howpublished={\url{https://kind.sigs.k8s.io/}},
+year = 2021,
+}
+
+
+@misc {xtradb-operator,
+  title="{Percona Distribution for MySQL Operator}",
+  howpublished={\url{https://github.com/percona/percona-xtradb-cluster-operator}},
+  year = 2021,
+}
+
+@misc {yugabyte-operator,
+  title="{Kubernetes Operator for YugabyteDB}",
+  howpublished={\url{https://github.com/yugabyte/yugabyte-operator}},
+  year = 2021,
+}
+
+@misc {zookeeper-operator,
+  title="{Kubernetes Operator for Zookeeper}",
+  howpublished={\url{https://github.com/pravega/zookeeper-operator}},
+  year = 2021,
+}
+
+@inproceedings{xu:osdi:16,
+  author = {Tianyin Xu and Xinxin Jin and Peng Huang and Yuanyuan Zhou and Shan Lu and Long Jin and Shankar Pasupathy},
+  title = "{Early Detection of Configuration Errors to Reduce Failure Damage}",
+  booktitle = {Proceedings of the 12th USENIX Symposium on Operating Systems Design and Implementation (OSDI'16)},
+  month = Nov,
+  year = 2016,
+}
+
+@misc {kubectl,
+  title="{kubectl}",
+  howpublished={\url{https://kubernetes.io/docs/tasks/tools/#kubectl}},
+  year = 2021,
+}
+
+@inproceedings{sun:hotos:21,
+  author = {Xudong Sun and Lalith Suresh and Aishwarya Ganesan and Ramnatthan Alagappan and Michael Gasch and Lilia Tang and Tianyin Xu},
+  title = "{Reasoning about modern datacenter infrastructures using partial histories}",
+  booktitle = "Proceedings of the 18th Workshop on Hot Topics in Operating Systems (HotOS-XVIII)",
+  month = MAY,
+  year =  2021,
+}
+
+@article{10.1145/3152483,
+author = {Alvaro, Peter and Tymon, Severine},
+title = {Abstracting the Geniuses Away from Failure Testing},
+year = {2017},
+issue_date = {January 2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {61},
+number = {1},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/3152483},
+doi = {10.1145/3152483},
+abstract = {Ordinary users need tools that automate the selection of custom-tailored faults to inject.},
+journal = {Commun. ACM},
+month = {dec},
+pages = {54–61},
+numpages = {8}
+}
+
+% relevant controller testing tools
+
+@misc {chaoskube,
+  title={Chaoskube: chaoskube periodically kills random pods in your Kubernetes cluster},
+  howpublished={\url{https://github.com/linki/chaoskube}},
+  year={2020}
+}
+
+@misc {pumba,
+  title={Pumba: Chaos testing, network emulation, and stress testing tool for containers},
+  howpublished={\url{https://github.com/alexei-led/pumba}},
+  year={2020}
+}
+
+@misc {kubemonkey,
+  title={Kubemonkey: An implementation of Netflix's Chaos Monkey for Kubernetes clusters},
+  howpublished={\url{https://github.com/asobti/kube-monkey}},
+  year={2020}
+}
+
+@misc {powerfulseal,
+  title={Powerfulseal: A powerful testing tool for Kubernetes clusters},
+  howpublished={\url{https://github.com/powerfulseal/powerfulseal}},
+  year={2020}
+}
+
+
+@misc{istiofault,
+  title={Istio Fault Injection},
+  howpublished={\url{https://istio.io/latest/docs/tasks/traffic-management/fault-injection/}},
+  year={2021}
+}
+
+@misc{k8sfaultinjection,
+  title={Kubernetes Fault Injection for a Single Pod},
+  howpublished={\url{https://github.com/tz70s/kubernetes-fault-injector}},
+  year={2017}
+}
+
+@misc{chaosmesh,
+  title={Chaos Mesh — A Solution for System Resiliency on Kubernetes},
+  howpublished={\url{https://dzone.com/articles/chaos-mesh-a-chaos-engineering-solution-for-system}},
+  year={2020}
+}
+
+https://docs.openshift.com/
+
+@misc{openshift,
+  title = "{Red Hat OpenShift}",
+  howpublished = "\url{https://docs.openshift.com/}",
+  year = {2021}
+}
+
+@misc{dst,
+  title = "{Decorated Syntax Tree}",
+  howpublished = "\url{https://github.com/dave/dst}",
+  year = {2021}
+}
+
+% failure stories
+@misc{redis-operator-failure-story,
+  author = {Vasily Marmer},
+  title = "{Our failure story with Redis operator for K8s}",
+  howpublished = "\url{https://medium.com/flant-com/redis-kubernetes-operator-and-data-analysis-tools-afce55b02123}",
+  year = {2020}
+}
+% fix it later
+
+@misc{mongodb-operator-failure-issues,
+  author = "{MongoDB Documentation}",
+  title = "{Known Issues in the MongoDB Enterprise Kubernetes Operator}",
+  howpublished = "\url{https://docs.mongodb.com/kubernetes-operator/master/reference/known-issues/}",
+  year = {2021}
+}
+
+@misc{elasticsearch-operator-failure-issues,
+  author = "{Elastic docs}",
+  title = "{Elastic Cloud on Kubernetes: Common problems}",
+  howpublished = "\url{https://www.elastic.co/guide/en/cloud-on-k8s/master/k8s-common-problems.html}",
+  year = {2021}
+}
+
+@INPROCEEDINGS{nginx-ingress-operator-failure-issues,
+  author = {Maxime Lagresle},
+  title = "{Moving to Kubernetes: the Bad and the Ugly}",
+  booktitle = {ContainerDays},
+  month = JUN,
+  year = {2019}
+}
+% the link looks not very serious
+% https://www.youtube.com/watch?v=MoIdU0J0f0E
+% https://speakerdeck.com/condayseu/moving-to-kubernetes-the-bad-and-the-ugly-maxime-lagresle
+
+@INPROCEEDINGS{writing-a-k8s-operator-the-hard-parts,
+    author = {Sebastien Guilloux},
+    title = "{Writing a Kubernetes Operator: the Hard Parts}",
+    booktitle = {KubeCon North America},
+    month = NOV,
+    year = {2019},
+}
+
+@INPROCEEDINGS{writing-robust-operators,
+    author = {Illya Chekrygin},
+    title = "{Keep the Space Shuttle Flying: Writing Robust Operators}",
+    booktitle = {KubeCon Europe},
+    month = MAY,
+    year = {2019},
+}
+
+@INPROCEEDINGS{storage-on-k8s-learning-from-failures,
+    author = {Hemant Kumar and Jan {\v{S}}afr{\'a}nek},
+    title = "{Storage on Kubernetes - Learning From Failures}",
+    booktitle = {KubeCon North America},
+    month = NOV,
+    year = {2019},
+}
+
+@misc{thenewstack_many_operator,
+  author = {Mary Branscombe},
+  title = "{The Runaway Problem of Kubernetes Operators and Dependency Lifecycles}",
+  booktitle = {The New Stack},
+  howpublished = "\url{https://thenewstack.io/the-runaway-problem-of-kubernetes-operators-and-dependency-lifecycles/}",
+  month = AUG,
+  year = {2020}
+}
+
+@misc{infoq_aws,
+  author = {Colm MacC\'{a}rthaigh},
+  title = "{PID loops and the art of keeping systems stable}",
+  howpublished = "\url{https://www.infoq.com/presentations/pid-loops/}",
+  month = JUN,
+  year = {2019}
+}
+
+@misc{sieve_repo,
+  title = "{The \sieve{} open-source project}",
+  howpublished = "{\it Anonymized link}",
+  year = {2021}
+}
+% https://github.com/sieve-project/sieve
+
+@misc{rabbitmq-operator-782,
+  author = "{rabbitmq-operator-4}",
+  title = "{[BUG] PVC expansion fails if the controller crashes in the middle of a reconciliation}",
+  howpublished = "{\it Anonymized link}",
+  year = {2021}
+}
+% https://github.com/rabbitmq/cluster-operator/issues/782
+
+@misc{K8SPSMDB-430,
+  author = "{K8SPSMDB-1}",
+  title = "{[BUG] Stale deletion timestamps lead to undesired statefulset and PVC deletion}",
+  howpublished = "{\it Anonymized link}",
+  year = {2021}
+}
+% https://jira.percona.com/browse/K8SPSMDB-430
+
+@misc {cassandra-operator-398,
+  author = "{cassandra-operator-1}",
+  title = "{[BUG] Reconcilation fails to delete PVCs if missing a deletion timestamp of the Cassandra pod}",
+  howpublished = "{\it Anonymized link}",
+  year = {2021},
+}
+% https://github.com/instaclustr/cassandra-operator/issues/398
+
+@misc{rabbitmq-operator-648,
+  author = "{rabbitmq-operator-1}",
+  title = "{[BUG] Reading stale RabbitMQ cluster information leads to unexpected StatefulSet deletion}",
+  howpublished = "{\it Anonymized link}",
+  year = {2021}
+}
+% https://github.com/rabbitmq/cluster-operator/issues/648
+
+@misc{K8SPSMDB-433,
+  author = "{K8SPSMDB-2}",
+  title = "{[BUG] Sharding stateful set gets mistakenly deleted when reading stale field values}",
+  howpublished = "{\it Anonymized link}",
+  year = {2021}
+}
+% https://jira.percona.com/browse/K8SPSMDB-433
+
+@misc{K8SSAND-559,
+  author = "{K8SSAND-1}",
+  title = "{[BUG] PVCs can be deleted mistakenly when reading stale deletion timestamp information}",
+  howpublished = "{\it Anonymized link}",
+  year = {2021}
+}
+% https://k8ssandra.atlassian.net/browse/K8SSAND-559
+
+@misc{zookeeper-operator-314,
+  author = "{zookeeper-operator-2}",
+  title = "{[BUG] Reading stale ZooKeeper cluster status can lead to undesired pod and PVC deletion}",
+  howpublished = "{\it Anonymized link}",
+  year = {2021}
+}
+% https://github.com/pravega/zookeeper-operator/issues/314
+
+@misc{nifikop-130,
+  author = "{nifikop-1}",
+  title = "{[BUG] NiFi configuration cannot be reloaded if the controller crashes and restarts in the middle of a reconciliation}",
+  howpublished = "{\it Anonymized link}",
+  year = {2021}
+}
+% https://github.com/Orange-OpenSource/nifikop/issues/130
+
+@misc{K8SPXC-896,
+  author = "{K8SPXC-4}",
+  title = "{[BUG] The controller fails to set up SSL-internal certificates if a crash happens at some particular point}",
+  howpublished = "{\it Anonymized link}",
+  year = {2021}
+}
+% https://jira.percona.com/browse/K8SPXC-896
+
+@misc{casskop-370,
+  author = "{casskop-4}",
+  title = "{[BUG] Casskop fails to clean up PVCs and refuses to handle user requests after crash and restart}",
+  howpublished = "{\it Anonymized link}",
+  year = {2021}
+}
+% https://github.com/Orange-OpenSource/casskop/issues/370
+
+@misc{zookeeper-operator-410,
+  author = "{zookeeper-operator-3}",
+  title = "{[BUG] Unexpected resource creation when the Zookeeper cluster is already deleted}",
+  howpublished = "{\it Anonymized link}",
+  year = {2021}
+}
+% https://github.com/pravega/zookeeper-operator/issues/410
+
+@misc{K8SPSMDB-434,
+  author = "{K8SPSMDB-3}",
+  title = "{[BUG] Nil pointer dereference when reconfiguring spec.sharding.enabled}",
+  howpublished = "{\it Anonymized link}",
+  year = {2021}
+}
+% https://jira.percona.com/browse/K8SPSMDB-434
+
+@misc {K8SPSMDB-578,
+  author = "{K8SPSMDB-5}",
+  title= "{[BUG] Failure of creating SSL-internal certificates when the controller crashes and restarts at some particular point}",
+  howpublished="{\it Anonymized link}",
+  year = {2021},
+}
+% https://jira.percona.com/browse/K8SPSMDB-578
+
+@misc {K8SPXC-725,
+  author = "{K8SPXC-2}",
+  title= "{[BUG] HAproxy stateful set and services get mistakenly deleted when reading stale spec.haproxy.enabled}",
+  howpublished="{\it Anonymized link}",
+  year = {2021},
+}
+% https://jira.percona.com/browse/K8SPXC-725
+
+
+@inproceedings{zhang2021understanding,
+  author = {Zhang, Yongle and Yang, Junwen and Jin, Zhuqi and Sethi, Utsav and Rodrigues, Kirk and Lu, Shan and Yuan, Ding},
+  title = "{Understanding and Detecting Software Upgrade Failures in Distributed Systems}",
+  year = {2021},
+  booktitle = {Proceedings of the ACM SIGOPS 28th Symposium on Operating Systems Principles (SOSP '21)},
+  month = OCT,
+}
+
+@inproceedings{xu2017attacking,
+  title="{Attacking the Brain: Races in the SDN Control Plane}",
+  author={Xu, Lei and Huang, Jeff and Hong, Sungmin and Zhang, Jialong and Gu, Guofei},
+  booktitle={Proceedings of the 26th USENIX Conference on Security Symposium (SEC'17)},
+  month=AUG,
+  year={2017}
+}
+
+@inproceedings{canini2012nice,
+  title="{A NICE Way to Test OpenFlow Applications}",
+  author={Canini, Marco and Venzano, Daniele and Pere{\v{s}}{\'\i}ni, Peter and Kosti{\'c}, Dejan and Rexford, Jennifer},
+  booktitle = {Proceedings of the 9th USENIX Conference on Networked Systems Design and Implementation (NSDI'12)},
+  month=APR,
+  year={2012}
+}
+
+@article{foster2011frenetic,
+  title={Frenetic: A network Programming Language},
+  author={Foster, Nate and Harrison, Rob and Freedman, Michael J and Monsanto, Christopher and Rexford, Jennifer and Story, Alec and Walker, David},
+  journal={ACM Sigplan Notices},
+  volume={46},
+  number={9},
+  pages={279--291},
+  year={2011},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{guha2013machine,
+  title="{Machine-Verified Network Controllers}",
+  author={Guha, Arjun and Reitblatt, Mark and Foster, Nate},
+  booktitle = {Proceedings of the 34th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'13)},
+  year={2013},
+  month=JUN,
+}
+
+@misc{api_server_tracing,
+title = "{API Server Tracing}",
+howpublished = "\url{https://github.com/kubernetes/kubernetes/pull/94942}",
+year={2021}
+}
+
+@misc{openshift_official_operators,
+title = "{OpenShift: The developer and operations friendly Kubernetes distro}",
+howpublished = "\url{https://github.com/openshift}",
+year={2021}
+}
+
+@misc{openshift_community_operators,
+title = "{Openshift Community Operators}",
+howpublished = "\url{https://github.com/redhat-openshift-ecosystem/community-operators-prod/tree/main/operators}",
+year={2021}
+}
+
+@misc{openshift_operators_hub,
+title = "{OpenShift operators}",
+howpublished = "\url{https://catalog.redhat.com/software/operators/search}",
+year={2021}
+}
+
+@misc{mongodb_tls_default_config,
+author = "{Percona Distribution for MongoDB Operator Documentation}",
+title = "{Transport Layer Security (TLS)}",
+howpublished = "\url{https://www.percona.com/doc/kubernetes-operator-for-psmongodb/TLS.html}",
+year={2021}
+}
+
+@misc{apiserver_design_proposals_archived,
+title = "{apiserver-watch.md}",
+howpublished = "\url{https://github.com/kubernetes/design-proposals-archive/blob/main/api-machinery/apiserver-watch.md}",
+year={2017}
+}
+
+% related links:
+% https://arxiv.org/pdf/2104.02423.pdf
+% https://github.com/kubernetes/kubernetes/issues/20540
+% https://github.com/kubernetes/kubernetes/issues/32361
+
+
+
+@misc{nsx_t,
+title = "{VMware NSX-T}",
+howpublished = "\url{https://docs.vmware.com/en/VMware-NSX-T-Data-Center/index.html}",
+year={2021},
+}
+
+@misc{ovn,
+title = "{Open Virtual Networking}",
+howpublished = "\url{https://github.com/ovn-org/ovn}",
+year={2021},
+}
+
+@misc{ovs,
+title = "{Open vSwitch: Production Quality, Multilayer Open Virtual Switch}",
+howpublished = "\url{https://www.openvswitch.org/}",
+year={2021},
+}
+
+@misc{vsphere,
+title = "{vSphere: Unified Management for Containers and VMs}",
+howpublished = "\url{https://www.vmware.com/products/vsphere.html}",
+year={2021},
+}
+
+@misc{demystifying_k8s_as_a_service_alibaba,
+author = {Zhimin Tang and Xiang Li and Fei Guo},
+title = "{Demystifying Kubernetes as a service – How Alibaba cloud manages 10,000s of Kubernetes clusters}",
+howpublished = "\url{https://www.cncf.io/blog/2019/12/12/demystifying-kubernetes-as-a-service-how-does-alibaba-cloud-manage-10000s-of-kubernetes-clusters/}",
+year={2019},
+month=DEC
+}
+
+@misc{aws_google_microsoft_redhat_operatorhub,
+author = {Christine Hall},
+title = "{AWS, Google, Microsoft, Red Hat's New Registry to Act as Clearing House for Kubernetes Operators}",
+howpublished = "\url{https://www.datacenterknowledge.com/open-source/aws-google-microsoft-red-hats-new-registry-act-clearing-house-kubernetes-operators}",
+year={2019},
+month=MAR
+}
+
+@misc{tanzu_operator,
+author = {Rich Lander},
+title = "{Kubernetes Operators: Should You Use Them?}",
+howpublished = "\url{https://tanzu.vmware.com/developer/blog/kubernetes-operators-should-you-use-them/}",
+year={2021},
+month=JUL
+}
+
+@misc{google_operator,
+author = {Chris Sosa and Palak Bhatia},
+title = "{Application management made easier with Kubernetes Operators on GCP Marketplace}",
+howpublished = "\url{https://cloud.google.com/blog/products/containers-kubernetes/application-management-made-easier-with-kubernete-operators-on-gcp-marketplace}",
+year={2019},
+month=MAY
+}
+
+@INPROCEEDINGS{hero_of_the_edge,
+    author = {Sascha Haase},
+    title = "{How an Operator Becomes the Hero of the Edge}",
+    booktitle = {OperatorCon},
+    month = MAY,
+    year = {2019},
+}
+% https://www.kubermatic.com/resources/how-an-operator-becomes-the-hero-of-the-edge/
+
+@misc{why_operator_essential,
+author = {Mustafa Musaji},
+title = "{Why Operators are essential for Kubernetes}",
+howpublished = "\url{https://www.redhat.com/en/blog/why-operators-are-essential-kubernetes}",
+year={2021},
+month=APR
+}
+
+@misc{aws_controller_for_k8s,
+author = {Jay Pipes and Michael Hausenblas and Nathan Taber},
+title = "{Introducing the AWS Controllers for Kubernetes (ACK)}",
+howpublished = "\url{https://aws.amazon.com/cn/blogs/containers/aws-controllers-for-kubernetes-ack/}",
+year={2020},
+month=AUG
+}
+
+@inproceedings{mace2015pivot,
+author = {Mace, Jonathan and Roelke, Ryan and Fonseca, Rodrigo},
+title = "{Pivot Tracing: Dynamic Causal Monitoring for Distributed Systems}",
+year = {2015},
+booktitle = {Proceedings of the 25th Symposium on Operating Systems Principles (SOSP'15)},
+month = OCT
+}
+
+@inproceedings{gong2021snowboard,
+author = {Gong, Sishuai and Altinb\"{u}ken, Deniz and Fonseca, Pedro and Maniatis, Petros},
+title = "{Snowboard: Finding Kernel Concurrency Bugs through Systematic Inter-Thread Communication Analysis}",
+year = {2021},
+booktitle = {Proceedings of the ACM SIGOPS 28th Symposium on Operating Systems Principles (SOSP'21)},
+month = OCT
+}
+
+@inproceedings{kasikci2013racemob,
+author = {Kasikci, Baris and Zamfir, Cristian and Candea, George},
+title = "{RaceMob: Crowdsourced Data Race Detection}",
+year = {2013},
+booktitle = {Proceedings of the 24th ACM Symposium on Operating Systems Principles (SOSP'13)},
+month = NOV
+}
+
+@inproceedings{kasikci2021data,
+author = {Kasikci, Baris and Zamfir, Cristian and Candea, George},
+title = "{Data Races vs. Data Race Bugs: Telling the Difference with Portend}",
+year = {2012},
+booktitle = {Proceedings of the 17th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS'12)},
+month = MAR
+}
+
+@inproceedings{scott2014troubleshooting,
+author = {Scott, Colin and Wundsam, Andreas and Raghavan, Barath and Panda, Aurojit and Or, Andrew and Lai, Jefferson and Huang, Eugene and Liu, Zhi and El-Hassany, Ahmed and Whitlock, Sam and Acharya, H.B. and Zarifis, Kyriakos and Shenker, Scott},
+title = "{Troubleshooting Blackbox SDN Control Software with Minimal Causal Sequences}",
+year = {2014},
+booktitle = {Proceedings of the 2014 ACM SIGCOMM Conference (SIGCOMM'14)},
+month = AUG,
+}
+
+@inproceedings{yang2005explode,
+title="{EXPLODE: a Lightweight, General System for Finding Serious Storage System Errors}",
+author={Junfeng Yang and Can Sar and Dawson Engler},
+booktitle = {Proceedings of the 7th Symposium on Operating Systems Design and Implementation (OSDI'06)},
+year={2006},
+month = NOV,
+}
