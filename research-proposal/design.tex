@@ -1,0 +1,35 @@
+\section{Design}
+    What is your proposal and how does it differ from prior work?
+
+    \subsection{Application Layer - client only}
+        \begin{enumerate}
+            \item Frontend
+            \item Data Cache
+            \item Prediction Model
+        \end{enumerate}
+    \subsection{FL Platform Layer - client, server}
+        \begin{enumerate}
+            \item \textbf{FL Client Runtime}
+                \begin{itemize}
+                    \item Model Training
+                    \item Device Analytics \newline
+                        No personally identifiable information will be logged.  
+                        \begin{itemize}
+                            \item Logs
+                            \item Device OS
+                            \item Device Model
+                            \item Device State
+                            \item Training time
+                            \item Memory profile
+                            \item Battery profile
+                        \end{itemize}
+                \end{itemize}
+            \item \textbf{FL Server Runtime}
+
+        \end{enumerate}
+    \subsection{Coordination Layer - server only}
+        \begin{enumerate}
+            \item Device Selection
+            \item Job Management
+            \item Failure Detection
+        \end{enumerate}
