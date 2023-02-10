@@ -26,6 +26,11 @@
   for heterogeneous clients.
 \newblock {\em CoRR abs/2010.01264\/} (2020).
 
+\bibitem{DBLP:journals/corr/abs-1909-12326}
+{\sc Jiang, Y., Wang, S., Ko, B.~J., Lee, W., and Tassiulas, L.}
+\newblock Model pruning enables efficient federated learning on edge devices.
+\newblock {\em CoRR abs/1909.12326\/} (2019).
+
 \bibitem{10.1145/3447993.3483278}
 {\sc Li, A., Sun, J., Li, P., Pu, Y., Li, H., and Chen, Y.}
 \newblock Hermes: An efficient federated learning framework for heterogeneous

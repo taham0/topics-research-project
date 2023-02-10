@@ -3,46 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: paper.aux
 The style file: acm.bst
 Database file #1: ref.bib
-Warning--I didn't find a database entry for "9762360"
-You've used 11 entries,
+You've used 12 entries,
             2253 wiz_defined-function locations,
-            595 strings with 6695 characters,
-and the built_in function-call counts, 4498 in all, are:
-= -- 408
-> -- 282
+            599 strings with 6920 characters,
+and the built_in function-call counts, 4829 in all, are:
+= -- 436
+> -- 309
 < -- 0
-+ -- 115
-- -- 104
-* -- 354
-:= -- 722
-add.period$ -- 33
-call.type$ -- 11
-change.case$ -- 85
++ -- 126
+- -- 114
+* -- 384
+:= -- 782
+add.period$ -- 36
+call.type$ -- 12
+change.case$ -- 93
 chr.to.int$ -- 0
-cite$ -- 11
-duplicate$ -- 184
-empty$ -- 308
-format.name$ -- 104
-if$ -- 948
+cite$ -- 12
+duplicate$ -- 193
+empty$ -- 327
+format.name$ -- 114
+if$ -- 1011
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 11
-newline$ -- 58
-num.names$ -- 22
-pop$ -- 94
+int.to.str$ -- 12
+missing$ -- 12
+newline$ -- 63
+num.names$ -- 24
+pop$ -- 101
 preamble$ -- 1
-purify$ -- 74
+purify$ -- 81
 quote$ -- 0
-skip$ -- 136
+skip$ -- 141
 stack$ -- 0
-substring$ -- 151
-swap$ -- 72
+substring$ -- 156
+swap$ -- 74
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 44
+type$ -- 48
 warning$ -- 0
-while$ -- 31
-width$ -- 13
-write$ -- 111
-(There was 1 warning)
+while$ -- 33
+width$ -- 14
+write$ -- 120
