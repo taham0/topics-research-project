@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{DBLP:journals/corr/abs-2007-14390}
+{\sc Beutel, D.~J., Topal, T., Mathur, A., Qiu, X., Parcollet, T., and Lane,
+  N.~D.}
+\newblock Flower: {A} friendly federated learning research framework.
+\newblock {\em CoRR abs/2007.14390\/} (2020).
+
 \bibitem{DBLP:journals/corr/abs-2112-09824}
 {\sc Bibikar, S., Vikalo, H., Wang, Z., and Chen, X.}
 \newblock Federated dynamic sparse training: Computing less, communicating
