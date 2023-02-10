@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.29)  10 FEB 2023 21:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.29)  10 FEB 2023 22:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -970,23 +970,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--9
 
 ) (./related_work.tex) (./design.tex
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-7.
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 36--40
+Underfull \hbox (badness 10000) in paragraph at lines 33--37
 
  []
 
 
-Underfull \hbox (badness 4441) in paragraph at lines 36--40
+Underfull \hbox (badness 4441) in paragraph at lines 33--37
 \T1/ptm/b/n/10 Device Man-age-ment \T1/ptm/m/n/10 (+20) The se-lec-tion and re-
 port-ing of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--40
+Underfull \hbox (badness 10000) in paragraph at lines 33--37
 
  []
 
@@ -998,7 +998,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
-) (./work_division.tex) (./paper.bbl) [2]
+) (./work_division.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+
+Overfull \hbox (76.11829pt too wide) in paragraph at lines 5--20
+ [][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 23
+.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.32993pt on input line 23.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `phv' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.32993pt on input line 23.
+) (./paper.bbl)
+[2]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
  (./paper.aux)
@@ -1008,21 +1034,22 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: 804D1634A723A56DC945701C4BA9F49F;1332.
  ) 
 Here is how much of TeX's memory you used:
- 26338 strings out of 483183
- 456309 string characters out of 5966292
+ 26468 strings out of 483183
+ 458356 string characters out of 5966292
  730051 words of memory out of 5000000
- 40659 multiletter control sequences out of 15000+600000
- 578565 words of font info for 189 fonts, out of 8000000 for 9000
+ 40769 multiletter control sequences out of 15000+600000
+ 596331 words of font info for 225 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 63i,9n,62p,1843b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,9n,62p,1843b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on paper.pdf (2 pages, 62572 bytes).
+e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a
+.pfb>
+Output written on paper.pdf (2 pages, 68188 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 30821 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 40037 words of extra memory for PDF output out of 42996 (max. 10000000)
 
