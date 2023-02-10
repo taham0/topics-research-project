@@ -6,6 +6,13 @@
   less, yet learning better.
 \newblock {\em CoRR abs/2112.09824\/} (2021).
 
+\bibitem{DBLP:journals/corr/abs-1902-01046}
+{\sc Bonawitz, K.~A., Eichner, H., Grieskamp, W., Huba, D., Ingerman, A.,
+  Ivanov, V., Kiddon, C., Kone{\v{c}}n{\'y}, J., Mazzocchi, S., McMahan, H.~B.,
+  Overveldt, T.~V., Petrou, D., Ramage, D., and Roselander, J.}
+\newblock Towards federated learning at scale: System design.
+\newblock {\em CoRR abs/1902.01046\/} (2019).
+
 \bibitem{DBLP:journals/corr/abs-1812-01097}
 {\sc Caldas, S., Wu, P., Li, T., Kone{\v{c}}n{\'y}, J., McMahan, H.~B., Smith,
   V., and Talwalkar, A.}
