@@ -38,6 +38,12 @@
 \newblock Model pruning enables efficient federated learning on edge devices.
 \newblock {\em CoRR abs/1909.12326\/} (2019).
 
+\bibitem{10.1504/IJMC.2005.006583}
+{\sc Kamssu, A.~J.}
+\newblock Global connectivity through wireless network technology: A possible
+  solution for poor countries.
+\newblock {\em Int. J. Mob. Commun. 3}, 3 (mar 2005), 249–262.
+
 \bibitem{10.1145/3447993.3483278}
 {\sc Li, A., Sun, J., Li, P., Pu, Y., Li, H., and Chen, Y.}
 \newblock Hermes: An efficient federated learning framework for heterogeneous
