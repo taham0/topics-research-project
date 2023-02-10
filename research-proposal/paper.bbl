@@ -11,4 +11,19 @@
 \newblock Federated learning of deep networks using model averaging.
 \newblock {\em CoRR abs/1602.05629\/} (2016).
 
+\bibitem{10.1145/3446382.3448652}
+{\sc Naseer, U., Benson, T.~A., and Netravali, R.}
+\newblock Webmedic: Disentangling the memory-functionality tension for the next
+  billion mobile web users.
+\newblock In {\em Proceedings of the 22nd International Workshop on Mobile
+  Computing Systems and Applications\/} (New York, NY, USA, 2021), HotMobile
+  '21, Association for Computing Machinery, p.~71–77.
+
+\bibitem{9225395}
+{\sc Vamsi, G.~K., Rasool, A., and Hajela, G.}
+\newblock Chatbot: A deep neural network based human to machine conversation
+  model.
+\newblock In {\em 2020 11th International Conference on Computing,
+  Communication and Networking Technologies (ICCCNT)\/} (2020), pp.~1--7.
+
 \end{thebibliography}

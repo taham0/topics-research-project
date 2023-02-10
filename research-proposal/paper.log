@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.29)  9 FEB 2023 15:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.29)  10 FEB 2023 13:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -964,68 +964,59 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) (./intro.tex)
-(./related_work.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--1
+(./related_work.tex) (./design.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-
-Underfull \hbox (badness 3579) in paragraph at lines 2--1
-\T1/ptm/m/n/10 (+20) Federated Learn-ing in-volves train-ing a shared global
- []
-
-
-Underfull \hbox (badness 1509) in paragraph at lines 2--1
-\T1/ptm/m/n/10 (+20) us-ing LEAF Bench-mark [[]] and a small-scale testbed
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--1
-
- []
-
-) (./design.tex
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-4.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+8.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-))
-(./methods.tex
+)
+Underfull \hbox (badness 1048) in paragraph at lines 37--38
+\T1/ptm/m/n/10 (+20) man-age-ment pro-cess in-clu-sive, we add func-tion-al-ity
+ to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]) (./methods.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
-) (./work_division.tex) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-(./paper.bbl) [2
-
-]
+) (./work_division.tex) (./paper.bbl) [2]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
  (./paper.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: D266B1A9DA1D7B10BAF54DBA80944367;1539.
+(rerunfilecheck)             Checksum: B226C45720BE6491E75FDDD5CDE1B6C2;1599.
  ) 
 Here is how much of TeX's memory you used:
- 26223 strings out of 483183
- 454835 string characters out of 5966292
- 725541 words of memory out of 5000000
- 40645 multiletter control sequences out of 15000+600000
- 573757 words of font info for 122 fonts, out of 8000000 for 9000
+ 26310 strings out of 483183
+ 455717 string characters out of 5966292
+ 727615 words of memory out of 5000000
+ 40652 multiletter control sequences out of 15000+600000
+ 577688 words of font info for 176 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 63i,9n,62p,767b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,9n,62p,1216b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on paper.pdf (2 pages, 46464 bytes).
+Output written on paper.pdf (2 pages, 57452 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
- 27 named destinations out of 1000 (max. 500000)
- 30821 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 107 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
+ 28 named destinations out of 1000 (max. 500000)
+ 30837 words of extra memory for PDF output out of 35830 (max. 10000000)
 

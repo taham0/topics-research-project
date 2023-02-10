@@ -1,13 +1,17 @@
 \section{Design}
-    What is your proposal and how does it differ from prior work?
+    To our knowledge, our work is the first large-scale FL deployment on real-world user devices that will aid evaluations for academic purposes.
 
-    \subsection{Application Layer - client only}
+    \subsection{Application Layer}
         \begin{enumerate}
             \item Frontend
             \item Data Cache
             \item Prediction Model
+            \newline
         \end{enumerate}
-    \subsection{FL Platform Layer - client, server}
+
+        Our application in target will be a specific University dedicated chatbot which handles a user's questions related to Graduate and Undergraduate level applications and academic assistance. Essentially our user will interact with our chatbot over a mobile application, where question will be provided as input. The question will be given as an input to our Deep Neural Network model on the user's device which will then produce an output as answer~\cite{9225395}. We will require user to provides us with the feedback for the query related answer, to improve the model. Our application will perform some pre-processing and then cache each question and answer pair with the feedback given, to later allow for the model to be trained on the device.
+    
+        \subsection{FL Platform Layer}
         \begin{enumerate}
             \item \textbf{FL Client Runtime}
                 \begin{itemize}
@@ -27,9 +31,10 @@
             \item \textbf{FL Server Runtime}
 
         \end{enumerate}
-    \subsection{Coordination Layer - server only}
-        \begin{enumerate}
-            \item Device Selection
-            \item Job Management
-            \item Failure Detection
-        \end{enumerate}
+    \subsection{Coordination Layer}
+        \subsubsection{Device Management}:
+
+        The selection and reporting of devices for FL tasks are part of device management. In order to make the device management process inclusive, we add functionality to the mechanism described in the paper Towards Federated Learning At Scale: System Design. Devices that meet the eligibility requirements check in with the server for any FL tasks that are open as part of the selection process. After allocating the FL tasks to available devices, the server waits for participants to report updates. To signal the end of a round, the server uses a goal counter and timer. The goal count is split into two quorums, one for high-end devices and the other for low-end devices, both of equal size. The round is marked complete if the goal count is achieved within the timeout value else the round is discarded.\\
+        \subsubsection{Failure Detection}:
+
+        The device is declared failed if it violates the eligibility criteria during a FL round (unmetered connection, plugged in to power). During the FL round, the failure is detected using the ping and ack mechanism between the server and the device. This aids the server in keeping track of active participants of a FL round.
