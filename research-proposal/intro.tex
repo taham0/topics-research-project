@@ -1,10 +1,10 @@
 \section{Introduction}
     Federated Learning involves training a shared global model using local data and compute on various user devices.
-    Several approaches have been proposed to implement this paradigm starting with Federated Averaging~\cite{DBLP:journals/corr/McMahanMRA16}.
-    However, not many of these approaches consider low-end devices that are unable to perform training. 
+    Several approaches have been proposed to implement this paradigm starting with FedAvg~\cite{DBLP:journals/corr/McMahanMRA16}.
+    However, the system heterogeneity in participating devices poses a significant challenge that needs to be addressed. In developing countries, 57\% of population are categorised as low-end users.~\cite{10.1145/3446382.3448652}
     This has implications for fairness due to introduction of systematic bias, in addition to degradation in model accuracy.
-    Recent works such as FedProx (2) and Hassas (3) have attempted to include slow devices by incorporating partial work and serving a subset model according to device characteristics, respectively. 
-    These approaches have been evaluated on large-scale simulations using LEAF Benchmark~\cite{DBLP:journals/corr/abs-1812-01097} and a small-scale testbed of mobile devices in case of Hassas.
-    To the best of our knowledge, none of these works have been evaluated on mid-scale federated learning systems using actual mobile devices with a sufficiently large number of clients.
-    \newline
-    Significance of the problem stems from the need to include low-end smart phones and IOT devices in the process of training the data. Inclusitivity of such users will allow for a  more precise model to be generated as the training data will be diverse and more  reflective of real life. Moreover, in the developing countries where more than 57\% of population are categorised as low-end users, their exclusion in the past models~\cite{10.1145/3446382.3448652} will lead to great inaccuracies and biasness. The approach of having sub-models in these devices will increase the likelihood for to train models even in the  case of limited poor connectivity and limited bandwidth. Overall, the concept of Hasaas will create a better privacy preserving and resource efficient model.
+    Recent works such as FedProx~\cite{DBLP:journals/corr/abs-1812-06127} and Hassas~\cite{DBLP:journals/corr/abs-2110-14205} have attempted to include slow devices by incorporating partial work and serving a subset model according to device characteristics, respectively. 
+    These approaches have mostly been evaluated on simulations using LEAF Benchmark~\cite{DBLP:journals/corr/abs-1812-01097}.
+    To the best of our knowledge, none of these works have been evaluated on federated learning systems using real-world devices with a sufficiently large number of users. \newline
+
+    To this end, we propose the development of a federated learning system that supports atleast 100 real-world users. We aim to achieve this by building a robust FL system and deploying a suitable application on top of it. In general, the application will leverage a machine learning model that benefits from collaborative learning in a privacy-preserving manner. Therefore, this will provide a conducive platform to concretely evaluate the robustness of Hassas as well as other FL frameworks. Conducting experiments on real-world data in the face of dynamic changes in systems heterogeneity, including state changes, will provide valuable insights that will benefit the community.

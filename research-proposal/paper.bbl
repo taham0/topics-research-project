@@ -19,6 +19,13 @@
   Computing Systems and Applications\/} (New York, NY, USA, 2021), HotMobile
   '21, Association for Computing Machinery, p.~71–77.
 
+\bibitem{DBLP:journals/corr/abs-1812-06127}
+{\sc Sahu, A.~K., Li, T., Sanjabi, M., Zaheer, M., Talwalkar, A., and Smith,
+  V.}
+\newblock On the convergence of federated optimization in heterogeneous
+  networks.
+\newblock {\em CoRR abs/1812.06127\/} (2018).
+
 \bibitem{9225395}
 {\sc Vamsi, G.~K., Rasool, A., and Hajela, G.}
 \newblock Chatbot: A deep neural network based human to machine conversation
