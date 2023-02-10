@@ -81,3 +81,98 @@ series = {HotMobile '21}
   biburl    = {https://dblp.org/rec/journals/corr/abs-1812-06127.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
+
+@article{DBLP:journals/corr/abs-2110-14205,
+  author    = {Muhammad Tahir Munir and
+               Muhammad Mustansar Saeed and
+               Mahad Ali and
+               Zafar Ayyub Qazi and
+               Ihsan Ayyub Qazi},
+  title     = {FedPrune: Towards Inclusive Federated Learning},
+  journal   = {CoRR},
+  volume    = {abs/2110.14205},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2110.14205},
+  eprinttype = {arXiv},
+  eprint    = {2110.14205},
+  timestamp = {Fri, 29 Oct 2021 10:49:32 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2110-14205.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:journals/corr/abs-2010-01264,
+  author    = {Enmao Diao and
+               Jie Ding and
+               Vahid Tarokh},
+  title     = {HeteroFL: Computation and Communication Efficient Federated Learning
+               for Heterogeneous Clients},
+  journal   = {CoRR},
+  volume    = {abs/2010.01264},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2010.01264},
+  eprinttype = {arXiv},
+  eprint    = {2010.01264},
+  timestamp = {Mon, 12 Oct 2020 17:53:10 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2010-01264.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:journals/corr/abs-2112-09824,
+  author    = {Sameer Bibikar and
+               Haris Vikalo and
+               Zhangyang Wang and
+               Xiaohan Chen},
+  title     = {Federated Dynamic Sparse Training: Computing Less, Communicating Less,
+               Yet Learning Better},
+  journal   = {CoRR},
+  volume    = {abs/2112.09824},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2112.09824},
+  eprinttype = {arXiv},
+  eprint    = {2112.09824},
+  timestamp = {Mon, 03 Jan 2022 15:45:35 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2112-09824.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings {232971,
+author = {Zheng Chai and Hannan Fayyaz and Zeshan Fayyaz and Ali Anwar and Yi Zhou and Nathalie Baracaldo and Heiko Ludwig and Yue Cheng},
+title = {Towards Taming the Resource and Data Heterogeneity in Federated Learning},
+booktitle = {2019 USENIX Conference on Operational Machine Learning (OpML 19)},
+year = {2019},
+isbn = {978-1-939133-00-7},
+address = {Santa Clara, CA},
+pages = {19--21},
+url = {https://www.usenix.org/conference/opml19/presentation/chai},
+publisher = {USENIX Association},
+month = may,
+}
+
+@inproceedings{10.1145/3447993.3483278,
+author = {Li, Ang and Sun, Jingwei and Li, Pengcheng and Pu, Yu and Li, Hai and Chen, Yiran},
+title = {Hermes: An Efficient Federated Learning Framework for Heterogeneous Mobile Clients},
+year = {2021},
+isbn = {9781450383424},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3447993.3483278},
+doi = {10.1145/3447993.3483278},
+abstract = {Federated learning (FL) has been a popular method to achieve distributed machine learning among numerous devices without sharing their data to a cloud server. FL aims to learn a shared global model with the participation of massive devices under the orchestration of a central server. However, mobile devices usually have limited communication bandwidth to transfer local updates to the central server. In addition, the data residing across devices is intrinsically statistically heterogeneous (i.e., non-IID data distribution). Learning a single global model may not work well for all devices participating in the FL under data heterogeneity. Such communication cost and data heterogeneity are two critical bottlenecks that hinder from applying FL in practice. Moreover, mobile devices usually have limited computational resources. Improving the inference efficiency of the learned model is critical to deploy deep learning applications on mobile devices. In this paper, we present Hermes - a communication and inference-efficient FL framework under data heterogeneity. To this end, each device finds a small subnetwork by applying the structured pruning; only the updates of these subnetworks will be communicated between the server and the devices. Instead of taking the average over all parameters of all devices as conventional FL frameworks, the server performs the average on only overlapped parameters across each subnetwork. By applying Hermes, each device can learn a personalized and structured sparse deep neural network, which can run efficiently on devices. Experiment results show the remarkable advantages of Hermes over the status quo approaches. Hermes achieves as high as 32.17\% increase in inference accuracy, 3.48\texttimes{} reduction on the communication cost, 1.83\texttimes{} speedup in inference efficiency, and 1.8\texttimes{} savings on energy consumption.},
+booktitle = {Proceedings of the 27th Annual International Conference on Mobile Computing and Networking},
+pages = {420–437},
+numpages = {18},
+keywords = {communication efficiency, inference efficiency, personalization, federated learning, data heterogeneity},
+location = {New Orleans, Louisiana},
+series = {MobiCom '21}
+}
+
+@INPROCEEDINGS{9139810,
+  author={Wang, Cong and Wei, Xin and Zhou, Pengzhan},
+  booktitle={2020 IEEE International Parallel and Distributed Processing Symposium (IPDPS)}, 
+  title={Optimize Scheduling of Federated Learning on Battery-powered Mobile Devices}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={212-221},
+  doi={10.1109/IPDPS47924.2020.00031}
+}

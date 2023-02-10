@@ -1,4 +1,10 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{DBLP:journals/corr/abs-2112-09824}
+{\sc Bibikar, S., Vikalo, H., Wang, Z., and Chen, X.}
+\newblock Federated dynamic sparse training: Computing less, communicating
+  less, yet learning better.
+\newblock {\em CoRR abs/2112.09824\/} (2021).
 
 \bibitem{DBLP:journals/corr/abs-1812-01097}
 {\sc Caldas, S., Wu, P., Li, T., Kone{\v{c}}n{\'y}, J., McMahan, H.~B., Smith,
@@ -6,10 +12,37 @@
 \newblock {LEAF:} {A} benchmark for federated settings.
 \newblock {\em CoRR abs/1812.01097\/} (2018).
 
+\bibitem{232971}
+{\sc Chai, Z., Fayyaz, H., Fayyaz, Z., Anwar, A., Zhou, Y., Baracaldo, N.,
+  Ludwig, H., and Cheng, Y.}
+\newblock Towards taming the resource and data heterogeneity in federated
+  learning.
+\newblock In {\em 2019 USENIX Conference on Operational Machine Learning (OpML
+  19)\/} (Santa Clara, CA, May 2019), USENIX Association, pp.~19--21.
+
+\bibitem{DBLP:journals/corr/abs-2010-01264}
+{\sc Diao, E., Ding, J., and Tarokh, V.}
+\newblock Heterofl: Computation and communication efficient federated learning
+  for heterogeneous clients.
+\newblock {\em CoRR abs/2010.01264\/} (2020).
+
+\bibitem{10.1145/3447993.3483278}
+{\sc Li, A., Sun, J., Li, P., Pu, Y., Li, H., and Chen, Y.}
+\newblock Hermes: An efficient federated learning framework for heterogeneous
+  mobile clients.
+\newblock In {\em Proceedings of the 27th Annual International Conference on
+  Mobile Computing and Networking\/} (New York, NY, USA, 2021), MobiCom '21,
+  Association for Computing Machinery, p.~420–437.
+
 \bibitem{DBLP:journals/corr/McMahanMRA16}
 {\sc McMahan, H.~B., Moore, E., Ramage, D., and y~Arcas, B.~A.}
 \newblock Federated learning of deep networks using model averaging.
 \newblock {\em CoRR abs/1602.05629\/} (2016).
+
+\bibitem{DBLP:journals/corr/abs-2110-14205}
+{\sc Munir, M.~T., Saeed, M.~M., Ali, M., Qazi, Z.~A., and Qazi, I.~A.}
+\newblock Fedprune: Towards inclusive federated learning.
+\newblock {\em CoRR abs/2110.14205\/} (2021).
 
 \bibitem{10.1145/3446382.3448652}
 {\sc Naseer, U., Benson, T.~A., and Netravali, R.}
@@ -32,5 +65,12 @@
   model.
 \newblock In {\em 2020 11th International Conference on Computing,
   Communication and Networking Technologies (ICCCNT)\/} (2020), pp.~1--7.
+
+\bibitem{9139810}
+{\sc Wang, C., Wei, X., and Zhou, P.}
+\newblock Optimize scheduling of federated learning on battery-powered mobile
+  devices.
+\newblock In {\em 2020 IEEE International Parallel and Distributed Processing
+  Symposium (IPDPS)\/} (2020), pp.~212--221.
 
 \end{thebibliography}
