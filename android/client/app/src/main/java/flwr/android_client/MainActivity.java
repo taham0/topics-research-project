@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText device_id;
     private ManagedChannel channel;
     public FlowerClient fc;
-    private static final String TAG = "Flower";
+    private static final String TAG = "FL Testbed";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
