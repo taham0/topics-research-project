@@ -1,26 +1,33 @@
-\section{Approach}
-    The tasks we need to accomplish can be broadly categorized as follows. \newline
+\section{Challenges and Future Direction}
+% \begin{table}[]
+%     \begin{tabular}{llll}
+%     \cline{1-1}
+%     \multicolumn{1}{|l|}{Model} & RAM(GB) & Quantity \\ \cline{1-1}
+%     Nexus 5X                    & 2       & 1        \\
+%     Nexus 6P                    & 3       & 2        \\
+%     Nexus 5                     & 2       & 4        \\
+%     Nexus 6                     & 3       & 3        \\
+%     Vivo Y12                    & 3       & 1        \\
+%     Oppo A37                    & 2       & 1        \\
+%     X                           & 2       & 1        \\
+%     Oppo A71K                   & 2       & 1        \\
+%     X                           & 2       & 1        \\
+%     Galaxy A21                  & 3       & 1        \\
+%     Techno Camon 18T            & 2       & 1        \\
+%     Galaxy S7 Edge              & 4       & 1        \\
+%     Infinix Smart 6             & 3       & 1        \\
+%     P8 Lite                     & 2       & 1        \\
+%     X                           & 2       & 1        \\
+%     X                           & 2       & 1        \\
+%     Galaxy S9 Plus              & 4       & 1        \\
+%     Galaxy S9                   & 4       & 1        \\
+%     Galaxy S8                   & 4       & 1        \\
+%     Galaxy S10                  & 4       & 1        \\
+%     Nokia 1                     & 1       & 1        \\
+%     \end{tabular}
+%     \caption{User Base Device Characteristics} 
+% \end{table}
 
-    \begin{enumerate}
-        \item Application Development
-        \item FL Platform Development
-        \item User Base Development
-    \end{enumerate}
+From our earlier experience of running FedAvg on Flower in a controlled setup, we postulate that the FL background process can be permanently interrupted at the client side due to mainly two reasons: the device is powered off, the process is killed by the system, or if it crashes due to some reason. Device state changes will be very frequent with real users. Hence, we are trying to add a restart mechanism which will essentially relaunch the process after device reboots and if the process is killed. To better analyse and inspect the reason for OS killing the App, we need to understand the OS interaction with App by performing crash analytics. Our crash analytics will include the context switching frequency, interupt frequency, and I/O Wait Time. Context switching frequency will tell us how difficult it is for the app to simultenously train data and log API metrics in the local storage. On the other hand, interupt frequency and I/O wait time will provide us with the insight of how much the App is competing for resources such as memory and CPU to carry out its tasks. \\
 
-    \subsection{Phase I}
-    We will begin by developing an android application.
-    Simultaneously, we will develop an end-to-end prototype of the FL platform for 4 devices using the phones at our disposal.
-    Once a working prototype is in place, the next step will be to scale it to 20 users and perform thorough end-to-end testing. We will extend the user base to friends and family so that we can receive quick feedback, resolve issues, and improve the application before further scaling.
-    The primary objective is to ensure efficient, seamless deployment of the FL platform on a sufficiently large number of clients.
-    \subsection{Phase II}
-    Once this is achieved, we will integrate our android application with the FL platform.
-    \subsection{Phase III}
-    Finally, we will make an effort to scale our application to 100+ users. We will focus on promotion through college events like Startup Weekend where people from all over the country arrive to observe new and innovative ideas that emerge from within the student body.
-
-    \begin{table}[t]
-        
-    \end{table}
-
-% - FL Platform
-%     - FL Runtime
-%     - Device Analytics
+Once, we have sucessfully evaluated Federated Averaging process on the users, we aim to implement Hassas using the strategy interface in Flower.
