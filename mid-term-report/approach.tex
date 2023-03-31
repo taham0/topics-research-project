@@ -1,2 +1,82 @@
-\section{Approach}
-    What is your proposal and how does it differ from prior work?
+\graphicspath{ {./images/} }
+
+\section{What approaches did we try?}
+    Intially, we started with comparing the testbed framework with flower by training
+    on each framework with 4 devices. This was done to conduct a cost-benefit analysis
+    of each framework so that we can make an informed decision keeping in mind our goals
+    which include scalability and support to ensure a robust and efficient implementation of our system. Flower is an open-source framework which provides intuitive APIs and an interface to implement custom strategies. However, support for android training in Java and Kotlin is still under development, which is why we implemented our own android application for training purposes. \\
+
+    \begin{table}[h]
+    \includegraphics[scale=0.38]{extbytesvstime}
+    \caption{External Bytes Available: As shown in Figure 1, since we are logging data every second, this is why the external storage bytes are constantly decreasing.}
+    \end{table}
+    
+    Our existing implementation in testbed for device information logging requires root access. Since this is not conducive for the remote, continuous infrastructure that we want to deploy, we integrated support for memory profiling, cpu profiling, among other characteristics that do not require root access, using the android Activity Manager API.
+    Due to the remote nature of the deployment, the FL task should be independent of the need for user interference. Specifically, we eliminated the need for manual loading of data from the server and beginning FL task execution. \\
+
+    Keeping in mind android system optimizations, it was important to ensure that our application ran in the foreground so that it is given higher priority and is less likely to be killed in high memory pressure situations. We also anticipated reduced application performance when the system limited its resources like CPU and Memory usage, for example, to conserve battery life. If the application is killed by the Operating System, it will lose its connection to the server, resulting in lost updates and incur an additional overhead of data reloading. This can be a significant issue, particularly in our case, where we expect large number of clients and longer training times. \\
+
+    \begin{table}[h]
+    \includegraphics[scale=0.30]{cpuprof}
+    \caption{CPU Profile: In the first round, the training completes for each device for the set number of epochs. However, due to a systematic error, the client thread blocks and the server waits for the client parameters so no CPU is utilized for the FL task. When one of the devices was switched to the foreground, the blockage is removed and the task resumes. This is a bug in our system which we are working on fixing.}
+    \end{table}
+
+    Due to time constraints, the intial idea of developing an application that would generate real-world data by providing users with an attractive incentive, was postponed. As a result, we decided to use an emulated dataset and partitioning the data among the users. From an implementation perspective, the dataset will be hosted on a centralized server. Clients connecting to the server will be assigned respective client IDs which will be used by the clients to fetch their respective data partitions from the central server. Due to similar reasons as above, the implementation of Hassas was also postponed. Instead, we are conducting evaluations using the Federated Averaging algorithm. \\
+
+    In order to access the performance and impact of Flower on low end phones, we mainly aimed at creating a sufficient user pool of mainly android phones with 2 to 3 GB RAM. We are approaching the LUMS student body, PDC staff, and MBM workers. However, we have found most devices to be mostly 4GB and above. Hence, we explored options outside LUMS in our individual capacity. As a result of our efforts, we were able to gather around 10 devices (< 4GB RAM) and 5 devices (> 3GB RAM). We expect to gather a much larger number of fast devices, but intend to maintain an appropriate ratio between the two. We are also reaching out to mobile phone vendors who sell used phones. If we are able to reach some arrangement with them, we will be able to leverage many devices with diverse characteristics. \\
+
+    \begin{table}[]
+        \begin{tabular}{llll}
+        \textbf{RAM (GB)}  & \textbf{Quantity} \\ 
+        1                               & 1        \\
+        2                               & 13        \\
+        3                               & 8        \\
+        4                               & 5        \\
+
+        \end{tabular}
+        \caption{Device Characteristics (By RAM)} 
+    \end{table}
+
+    (Metrics)
+    cpu profile, memory profile, os interaction (timer interrupts, context switches), os heterogeneity (base profiling across devices)
+
+    % \begin{table}[]
+    %     \begin{tabular}{llll}
+    %     \cline{1-1}
+    %     \multicolumn{1}{|l|}{Model} & RAM(GB) & Quantity \\ \cline{1-1}
+    %     Nexus 5X                    & 2       & 1        \\
+    %     Nexus 6P                    & 3       & 2        \\
+    %     Nexus 5                     & 2       & 4        \\
+    %     Nexus 6                     & 3       & 3        \\
+    %     Vivo Y12                    & 3       & 1        \\
+    %     Oppo A37                    & 2       & 1        \\
+    %     X                           & 2       & 1        \\
+    %     Oppo A71K                   & 2       & 1        \\
+    %     X                           & 2       & 1        \\
+    %     Galaxy A21                  & 3       & 1        \\
+    %     Techno Camon 18T            & 2       & 1        \\
+    %     Galaxy S7 Edge              & 4       & 1        \\
+    %     Infinix Smart 6             & 3       & 1        \\
+    %     P8 Lite                     & 2       & 1        \\
+    %     X                           & 2       & 1        \\
+    %     X                           & 2       & 1        \\
+    %     Galaxy S9 Plus              & 4       & 1        \\
+    %     Galaxy S9                   & 4       & 1        \\
+    %     Galaxy S8                   & 4       & 1        \\
+    %     Galaxy S10                  & 4       & 1        \\
+    %     Nokia 1                     & 1       & 1        \\
+    %     \end{tabular}
+    %     \caption{User Base Device Characteristics} 
+    % \end{table}
+
+    From our earlier experience of running FedAvg on Flower in a controlled setup, we postulate that the FL background process can be permanently interrupted at the client side due to mainly two reasons: the device is powered off, the process is killed by the system, or if it crashes due to some reason. Device state changes will be very frequent with real users. Hence, we are trying to add a restart mechanism which will essentially relaunch the process after device reboots and if the process is killed. To better analyse and inspect the reason for OS killing the App, we need to understand the OS interaction with App by performing crash analytics. Our crash analytics will include the context switching frequency, interupt frequency, and I/O Wait Time. Context switching frequency will tell us how difficult it is for the app to simultenously train data and log API metrics in the local storage. On the other hand, interupt frequency and I/O wait time will provide us with the insight of how much the App is competing for resources such as memory and CPU to carry out its tasks. \\
+
+    \begin{table}[h]
+        \includegraphics[scale=0.38]{freemem}
+        \caption{Free Memory}
+    \end{table}
+    
+    Once, we have sucessfully evaluated Federated Averaging process on the users, we aim to implement Hassas using the strategy interface in Flower.
+
+% reference deployed FL applications
+% papers evaluated on testbed of real devices

@@ -1,3 +1,34 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{DBLP:journals/corr/abs-1812-01097}
+{\sc Caldas, S., Wu, P., Li, T., Kone{\v{c}}n{\'y}, J., McMahan, H.~B., Smith,
+  V., and Talwalkar, A.}
+\newblock {LEAF:} {A} benchmark for federated settings.
+\newblock {\em CoRR abs/1812.01097\/} (2018).
+
+\bibitem{DBLP:journals/corr/McMahanMRA16}
+{\sc McMahan, H.~B., Moore, E., Ramage, D., and y~Arcas, B.~A.}
+\newblock Federated learning of deep networks using model averaging.
+\newblock {\em CoRR abs/1602.05629\/} (2016).
+
+\bibitem{DBLP:journals/corr/abs-2110-14205}
+{\sc Munir, M.~T., Saeed, M.~M., Ali, M., Qazi, Z.~A., and Qazi, I.~A.}
+\newblock Fedprune: Towards inclusive federated learning.
+\newblock {\em CoRR abs/2110.14205\/} (2021).
+
+\bibitem{10.1145/3446382.3448652}
+{\sc Naseer, U., Benson, T.~A., and Netravali, R.}
+\newblock Webmedic: Disentangling the memory-functionality tension for the next
+  billion mobile web users.
+\newblock In {\em Proceedings of the 22nd International Workshop on Mobile
+  Computing Systems and Applications\/} (New York, NY, USA, 2021), HotMobile
+  '21, Association for Computing Machinery, p.~71–77.
+
+\bibitem{DBLP:journals/corr/abs-1812-06127}
+{\sc Sahu, A.~K., Li, T., Sanjabi, M., Zaheer, M., Talwalkar, A., and Smith,
+  V.}
+\newblock On the convergence of federated optimization in heterogeneous
+  networks.
+\newblock {\em CoRR abs/1812.06127\/} (2018).
 
 \end{thebibliography}
