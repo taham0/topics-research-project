@@ -1,2 +1,10 @@
 \section{Introduction}
-    What is the problem you plan to address? Why is it important to solve?
+    Federated Learning involves training a shared global model using local data and compute on various user devices.
+    Several approaches have been proposed to implement this paradigm starting with FedAvg~\cite{DBLP:journals/corr/McMahanMRA16}.
+    However, the system heterogeneity in participating devices poses a significant challenge that needs to be addressed. In developing countries, 57\% of population are categorised as low-end users.~\cite{10.1145/3446382.3448652}
+    This has implications for fairness due to introduction of systematic bias, in addition to degradation in model accuracy.
+    Recent works such as FedProx~\cite{DBLP:journals/corr/abs-1812-06127} and Hassas~\cite{DBLP:journals/corr/abs-2110-14205} have attempted to include slow devices by incorporating partial work and serving a subset model according to device characteristics, respectively. 
+    These approaches have mostly been evaluated on simulations using LEAF Benchmark~\cite{DBLP:journals/corr/abs-1812-01097}.
+    To the best of our knowledge, none of these works have been evaluated on federated learning systems using real-world devices with a sufficiently large number of users. \newline
+
+    To this end, we develop a federated learning system that includes 100+ active real-world users. We achieve this by building a robust FL system using the Flower framework. This deployment will provide a conducive platform to concretely evaluate the robustness of Hassas as well as other FL strategies. Conducting experiments on real-world data in the face of dynamic changes in systems heterogeneity, including state changes, will provide valuable insights that will benefit the community.

@@ -1,0 +1,33 @@
+\section{Challenges and Future Direction}
+% \begin{table}[]
+%     \begin{tabular}{llll}
+%     \cline{1-1}
+%     \multicolumn{1}{|l|}{Model} & RAM(GB) & Quantity \\ \cline{1-1}
+%     Nexus 5X                    & 2       & 1        \\
+%     Nexus 6P                    & 3       & 2        \\
+%     Nexus 5                     & 2       & 4        \\
+%     Nexus 6                     & 3       & 3        \\
+%     Vivo Y12                    & 3       & 1        \\
+%     Oppo A37                    & 2       & 1        \\
+%     X                           & 2       & 1        \\
+%     Oppo A71K                   & 2       & 1        \\
+%     X                           & 2       & 1        \\
+%     Galaxy A21                  & 3       & 1        \\
+%     Techno Camon 18T            & 2       & 1        \\
+%     Galaxy S7 Edge              & 4       & 1        \\
+%     Infinix Smart 6             & 3       & 1        \\
+%     P8 Lite                     & 2       & 1        \\
+%     X                           & 2       & 1        \\
+%     X                           & 2       & 1        \\
+%     Galaxy S9 Plus              & 4       & 1        \\
+%     Galaxy S9                   & 4       & 1        \\
+%     Galaxy S8                   & 4       & 1        \\
+%     Galaxy S10                  & 4       & 1        \\
+%     Nokia 1                     & 1       & 1        \\
+%     \end{tabular}
+%     \caption{User Base Device Characteristics} 
+% \end{table}
+
+From our earlier experience of running FedAvg on Flower in a controlled setup, we postulate that the FL background process can be permanently interrupted at the client side due to mainly two reasons: the device is powered off, the process is killed by the system, or if it crashes due to some reason. Device state changes will be very frequent with real users. Hence, we are trying to add a restart mechanism which will essentially relaunch the process after device reboots and if the process is killed. To better analyse and inspect the reason for OS killing the App, we need to understand the OS interaction with App by performing crash analytics. Our crash analytics will include the context switching frequency, interupt frequency, and I/O Wait Time. Context switching frequency will tell us how difficult it is for the app to simultenously train data and log API metrics in the local storage. On the other hand, interupt frequency and I/O wait time will provide us with the insight of how much the App is competing for resources such as memory and CPU to carry out its tasks. \\
+
+Once, we have sucessfully evaluated Federated Averaging process on the users, we aim to implement Hassas using the strategy interface in Flower.
